@@ -1,95 +1,61 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+    <div>
+      <Navbar selectedItem="Home" />
+      <div className="heroSection">
+        <div className="container">
+          <div className="row">
+            <div className="col-5">
+              <div className="homeLeftContent">
+                <h2>WELCOME TO</h2>
+                <img src="/brandName.png" className="img-fluid" />
+                <p className="mt-5 pt-3">
+                  Welcome to Mie Ride – your friendly neighborhood ride sharing
+                  solution without the surge price surprises. We get it – life’s
+                  expensive enough without wondering what your rideshare will
+                  cost. That’s why we keep it simple with fixed prices you can
+                  count on. Need a ride-sharing service to campus? Running late
+                  for work? Airport dash? We've got you covered.{" "}
+                </p>
+                <p>
+                  We’re real people connecting drivers and passengers heading
+                  the same way, helping everyone save money while making
+                  Ontario’s roads less crowded. Our drivers are your neighbors,
+                  earning extra on routes they already take. No corporate feel.
+                  No robots setting prices. Just real cab services for real
+                  people.{" "}
+                </p>
+                <p>
+                  {" "}
+                  Whether you're in Caledon, Brampton, Kitchener, Mississauga,
+                  Barrie, Vaughan, Mie Ride keeps your fare fair – every time.
+                  And we’re not stopping there. We’re expanding soon, bringing
+                  fixed-price rideshare to even more communities across Ontario.{" "}
+                </p>
+                <p className="mb-5 pb-3">
+                  {" "}
+                  So when you're searching cab services near me and tired of
+                  price spikes during rush hour, rainy days, or busy weekends,
+                  remember: Mie Ride offers consistent pricing that respects
+                  your budget – no matter where you're headed.
+                </p>
+                <div className="downloadBtnGroup">
+                  <button className="downloadNowBtn w-100">Download Now</button>
+                  <div className="d-flex justify-content-between mt-5">
+                    <img src="/androidDownload.png" />
+                    <img src="/iosDownload.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-7">
+              {/* <img src="/heroSectionImg.jpeg" className="img-fluid"/> */}
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
     </div>
   );
 }
