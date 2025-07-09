@@ -1,8 +1,17 @@
 .bgLightGreen {
-  background-color: #d0ff13;
+  background-color: #d0ff13 !important;
 }
 .textDark {
   color: #1c1c1c !important;
+}
+.bgDark {
+  background-color: #1c1c1c !important;
+}
+.textLight {
+  color: #fff !important;
+}
+.textLightGreen {
+  color: #d0ff13 !important;
 }
 /* navbar started */
 .navbarMain {
@@ -48,8 +57,8 @@
   font-weight: 300;
   line-height: 150%; /* 24px */
 }
-.downloadBtnGroup{
-width: 375px;
+.downloadBtnGroup {
+  width: 375px;
 }
 .downloadNowBtn {
   color: #1c1c1c;
@@ -57,11 +66,87 @@ width: 375px;
   font-size: 25px;
   font-style: normal;
   font-weight: 700;
-  
   border-radius: 15px;
   background: #d0ff13;
   border: none;
-  padding: 15px;
-  /* line-height: 0px; */
+  padding: 15px 15px 10px 15px;
+  /* line-height: 1; */
+}
+.homeCard h5 {
+  height: 25px !important;
+}
+.homeCard button {
+  border-radius: 35px;
+  border: 1px solid #000;
+  background: #d0ff13;
+  box-shadow: 5px 10px 30px 0px rgba(0, 0, 0, 0.2);
+  color: #1c1c1c;
+  height: 50px;
+  width: 100%;
+  font-family: Nexa;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.faqTableMain{
+  padding: 40px 80px;
+}
+.faqCard{
+  border-radius: 20px;
+background: #000;
 }
 /* home section ended */
+
+/* about section started */
+.ourStoryMain {
+  background: #d0ff13;
+  padding: 50px 0px;
+}
+.ourStoryMain h2 {
+  color: #1c1c1c;
+  font-family: Nexa;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.ourStoryMain p {
+  color: #1c1c1c;
+  font-family: Nexa;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 0px;
+}
+.aboutCard {
+  border-radius: 20px;
+  border: 2px solid #d0ff13;
+  background: #000;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+  padding: 45px 30px;
+}
+.aboutCard h5 {
+  color: #fff;
+  font-family: Nexa;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  height: 50px;
+  text-align: left !important;
+}
+.aboutCard p {
+  color: #fff;
+  font-family: Nexa;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 0px;
+}
+.aboutCard img {
+  height: 120px;
+}
+/* about section ended */

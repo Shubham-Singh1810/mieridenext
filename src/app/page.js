@@ -56,6 +56,93 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="ourStoryMain bgDark ">
+        <div className="container">
+          <h2 className="textLight">Services</h2>
+          <div className="row mt-lg-5">
+            <div className="col-lg-4">
+              <div className="aboutCard homeCard">
+                <div className="">
+                  <h5 className="my-lg-4">Sharing Ride</h5>
+                </div>
+                <p>
+                  Book your own private journey with fixed pricing and
+                  personalized comfort – whether you're searching for a cab
+                  company near me or a solo ride experience.
+                </p>
+                <button className="mt-5 ">Read More &#8594;</button>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="aboutCard homeCard">
+                <div className="">
+                  <h5 className="my-lg-4">Personal Ride</h5>
+                </div>
+                <p>
+                  Travel together, split costs, reduce emissions—smart commuting
+                  for budget-conscious travelers who enjoy sharing cabs and
+                  using car sharing services.
+                </p>
+                <button className="mt-5 ">Read More &#8594;</button>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="aboutCard homeCard">
+                <div className="">
+                  <h5 className="my-lg-4">Driver Onboard</h5>
+                </div>
+                <p>
+                  Join our team, set your schedule, earn consistently while
+                  helping others commute – your chance to drive for a growing
+                  fixed price rideshare platform.
+                </p>
+                <button className="mt-5 ">Read More &#8594;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="ourStoryMain bgDark ">
+        <div className="container">
+          <h2 className="textLight">Roadmap</h2>
+          <div className="border mt-5 py-5 text-center text-light">
+            Work in progress
+          </div>
+        </div>
+      </div>
+      <div className="ourStoryMain bgDark ">
+        <div className="container">
+          <h2 className="textLight">Faq</h2>
+          <p className="textLight">
+            Get quick answers to common questions about booking, pricing,
+            cancellations, and using our cab services near me.
+          </p>
+          <div className="faqTableMain">
+            {[1, 2, 3, 4, 5]?.map((v, i) => {
+              return (
+                <div className={"faqCard p-5  " + (i!=0 && "mt-5")}>
+                  <div className="d-flex align-items-center">
+                    <div>
+                      <p className="textLightGreen pb-3">
+                        What is Mie Pay, and how does it enhance my ride
+                        experience?
+                      </p>
+                      <p className="textLight">
+                        Mie Pay is our secure in-app wallet, enabling quick,
+                        hassle-free payments and seamless transactions for all
+                        your ride needs.​
+                      </p>
+                    </div>
+                    <div className="ms-5">
+                      <img src="/greenPlusIcon.png"/>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
