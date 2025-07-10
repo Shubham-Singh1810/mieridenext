@@ -89,12 +89,12 @@
   font-weight: 700;
   line-height: 150%;
 }
-.faqTableMain{
+.faqTableMain {
   padding: 40px 80px;
 }
-.faqCard{
+.faqCard {
   border-radius: 20px;
-background: #000;
+  background: #000;
 }
 /* home section ended */
 
@@ -150,3 +150,88 @@ background: #000;
   height: 120px;
 }
 /* about section ended */
+/* why us started */
+.homeLeftContent h4 {
+  color: #fff;
+  font-family: Nexa;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.bottomP {
+  font-size: 20px;
+  font-weight: 700 !important;
+}
+/* why us ended */
+/* footer stared  */
+.footerUpper {
+  background: #d0ff13;
+  padding: 50px 0px;
+}
+/* footer ended */
+/* advertice with us started */
+.homeCard li {
+  color: #fff;
+  font-family: Nexa;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 8px;
+}
+.greenTableHead {
+  border-radius: 30px;
+  background: #d0ff13;
+}
+.greenTableHead p {
+  color: #000;
+  text-align: center;
+  font-family: Nexa;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 0px;
+  padding: 18px 0px;
+}
+.tableRow p{
+  color: #000;
+  text-align: center;
+  font-family: Nexa;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 0px;
+  padding: 18px 0px;
+  border-radius: 30px;
+  background: #fff;
+  margin: 0px 12px ;
+}
+.diffrenceDiv li{
+  color: #FFF;
+font-family: Nexa;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.diffrenceDiv p{
+  margin-left: 40px;
+}
+.letsConnectBtn{
+  color: #1C1C1C;
+font-family: Nexa;
+font-size: 35px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+  border-radius: 20px;
+background: #D0FF13;
+box-shadow: 20px 20px 30px 0px rgba(0, 0, 0, 0.30);
+border: none;
+padding: 35px 0px 25px 0px;
+width: 700px;
+}
+/* advertice with us ended */
