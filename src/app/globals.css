@@ -37,9 +37,22 @@
 
 /* home section started */
 .heroSection {
-  background: #1c1c1c;
+  background: #1C1C1C;
   padding: 50px 0px;
+  z-index: 100;
 }
+
+.heroSectionBg{
+  background: url("/contactBg.png");
+  border: 1px solid red;
+  height: 100vh;
+  background-size: 100% 100%;
+  position: relative;
+  top: -60vh;
+ 
+  z-index: -1;
+}
+
 .heroSection h2 {
   color: #fff;
   font-family: Nexa;
@@ -95,6 +108,57 @@
 .faqCard {
   border-radius: 20px;
   background: #000;
+}
+.roadMapDiv{
+  margin-top: 50px;
+  height: 400px;
+}
+.roadMapDiv span{
+  position: relative;
+  top: 15px;
+color: #101010;
+font-family: Nexa;
+font-size: 150px;
+font-style: normal;
+font-weight: 700;
+
+text-align: center;
+margin-bottom: 0px;
+}
+.horizontalLine{
+  height: 5px;
+  width: 100%;
+  background-color: #fff;
+}
+.verticalLine{
+  height: 100px;
+  width: 2px;
+  background-color: #fff;
+}
+.visibilityNone{
+  visibility: hidden;
+}
+.contentRoadMan{
+  position: relative;
+  top: -450px;
+  margin-bottom: -450px;
+}
+.contentRoadMan p{
+color: #FFF;
+font-family: Nexa;
+font-size: 25px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.contentRoadMan h6{
+color: #FFF;
+text-align: center;
+font-family: nexa;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 /* home section ended */
 
@@ -195,7 +259,7 @@
   margin-bottom: 0px;
   padding: 18px 0px;
 }
-.tableRow p{
+.tableRow p {
   color: #000;
   text-align: center;
   font-family: Nexa;
@@ -207,31 +271,214 @@
   padding: 18px 0px;
   border-radius: 30px;
   background: #fff;
-  margin: 0px 12px ;
+  margin: 0px 12px;
 }
-.diffrenceDiv li{
+.diffrenceDiv li {
+  color: #fff;
+  font-family: Nexa;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.diffrenceDiv p {
+  margin-left: 40px;
+}
+.letsConnectBtn {
+  color: #1c1c1c;
+  font-family: Nexa;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 20px;
+  background: #d0ff13;
+  box-shadow: 20px 20px 30px 0px rgba(0, 0, 0, 0.3);
+  border: none;
+  padding: 35px 0px 25px 0px;
+  width: 700px;
+}
+/* advertice with us ended */
+/* partner with us started */
+.partnerCard {
+  margin: 30px;
+}
+
+.outerBorder {
+  border-radius: 30px;
+  border: 2px solid #fff;
+  background: #000;
+  box-shadow: 8.727px 8.727px 17.455px 0px rgba(0, 0, 0, 0.25);
+  transform: rotate(15deg);
+  height: 500px;
+}
+.innerBorder {
+  border-radius: 26.182px;
+  background: #d0ff13;
+  box-shadow: 8.727px 8.727px 17.455px 0px rgba(0, 0, 0, 0.25);
+  transform: rotate(-15deg);
+  height: 500px;
+}
+.partnerCard ul {
+  padding: 0px 16px 0px 16px;
+}
+.partnerCard li {
+  color: #1c1c1c;
+  font-family: Nexa;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.partnerCard img {
+  position: relative;
+  top: -50px;
+  margin-bottom: -60px;
+}
+.partnerCard h6 {
+  color: #1c1c1c;
+  font-family: Nexa;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+.whyChooseCard {
+  height: 100%;
+}
+.whyChooseCard h5 {
+  font-size: 20px;
+}
+.ourStoryMain h4 {
+  color: #fff;
+  font-family: Nexa;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.partnerSayDiv p {
+  font-size: 20px;
+  margin-bottom: 20px !important;
+}
+.homeLeftContent h5 {
+  color: #fff;
+  font-family: Nexa;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.font700 {
+  font-weight: 700;
+}
+.contactCard {
+  border-radius: 24px;
+  border: 1px solid #d0ff13;
+  padding: 25px;
+  background: url("/contactCardBg.png");
+}
+.contactCard p {
+  color: #fff;
+  font-family: Nexa;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 16px;
+  position: relative;
+  top: 8px;
+}
+.contactCard h5 {
+  color: #fff;
+  font-family: Nexa;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 0px;
+}
+/* partner with us ended */
+
+/* contact us started */
+.contactSubHeading {
+  color: #d0ff13;
+  font-family: Nexa;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #d0ff13;
+}
+.bgDarkContactCard {
+  background: url("");
+
+  background: rgba(1, 1, 1, 0.7);
+}
+.contactForm {
+  padding: 45px;
+  border-radius: 30px;
+  background-color: #000;
+}
+.inputDiv input {
+  outline: none;
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  padding: 12px;
+  margin-bottom: 25px;
   color: #FFF;
+font-family: Nexa;
+font-size: 16px;
+font-style: normal;
+font-weight: 200;
+line-height: normal;
+}
+.contactForm button {
+  width: 100%;
+  border-radius: 10px;
+  background: #d0ff13;
+  border: none;
+  padding: 14px;
+  color: #1c1c1c;
+  font-family: Nexa;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.contactContent h6{
+  color: #D0FF13;
 font-family: Nexa;
 font-size: 30px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
 }
-.diffrenceDiv p{
-  margin-left: 40px;
-}
-.letsConnectBtn{
-  color: #1C1C1C;
+.contactContent h4{
+  color: #FFF;
 font-family: Nexa;
-font-size: 35px;
+font-size: 50px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
-  border-radius: 20px;
-background: #D0FF13;
-box-shadow: 20px 20px 30px 0px rgba(0, 0, 0, 0.30);
-border: none;
-padding: 35px 0px 25px 0px;
-width: 700px;
 }
-/* advertice with us ended */
+.contactContent p{
+  color: #FFF;
+font-family: Nexa;
+font-size: 30px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+.font700{
+  font-weight: 700 !important;
+}
+.conatctBg{
+  background: url("/contactBg.png");
+  background-size: 100% 100%;
+  opacity: 0.8;
+}
+/* contact us ended */

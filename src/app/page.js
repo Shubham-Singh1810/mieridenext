@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <Navbar selectedItem="Home" />
-      <div className="heroSection">
+      <div className="heroSection transparentDarkBg">
         <div className="container">
           <div className="row">
             <div className="col-5">
@@ -52,12 +52,14 @@ export default function Home() {
               </div>
             </div>
             <div className="col-7">
-              {/* <img src="/heroSectionImg.jpeg" className="img-fluid"/> */}
+              <img src="/heroSectionImage.png" className="img-fluid" />
             </div>
           </div>
         </div>
+        {/* <div className="heroSectionBg"></div> */}
       </div>
-      <div className="ourStoryMain bgDark ">
+
+      <div className="ourStoryMain bgDark serviceSectionMarginTop">
         <div className="container">
           <h2 className="textLight">Services</h2>
           <div className="row mt-lg-5">
@@ -106,8 +108,82 @@ export default function Home() {
       <div className="ourStoryMain bgDark ">
         <div className="container">
           <h2 className="textLight">Roadmap</h2>
-          <div className="border mt-5 py-5 text-center text-light">
-            Work in progress
+          <div className="roadMapDiv d-flex justify-content-center align-items-center ">
+            <span>ROADMAP</span>
+          </div>
+          <div className="roadMapDiv contentRoadMan d-flex justify-content-center align-items-center  w-100">
+            <div className="w-100">
+<div className="row mx-0">
+              <div className="col-2 text-light text-center">
+                <p className="text-light">Shared Ride</p>
+                <h6>(Live)</h6>
+              </div>
+              <div className="col-2 text-light text-center visibilityNone">
+                <p className="text-light">Personal Ride</p>
+                <h6>(Live)</h6>
+              </div>
+              <div className="col-2 text-light text-center">
+                <p className="text-light">Family Ride</p>
+                <h6>(Aug 2025)</h6>
+              </div>
+              <div className="col-2 text-light text-center visibilityNone">
+                <p className="text-light">Family Ride</p>
+                <h6>(Oct 2025)</h6>
+              </div>
+              <div className="col-2 text-light text-center">
+                <p className="text-light">Airport Ride</p>
+                <h6>(Sep 2025)</h6>
+              </div>
+              <div className="col-2 text-light text-center visibilityNone">
+                <p className="text-light">Intercity Ride</p>
+                <h6>(Dec 2025)</h6>
+              </div>
+            </div>
+            <div className="d-flex justify-content-around">
+              <div className="verticalLine"></div>
+              <div className="verticalLine visibilityNone"></div>
+              <div className="verticalLine"></div>
+              <div className="verticalLine visibilityNone"></div>
+              <div className="verticalLine"></div>
+              <div className="verticalLine visibilityNone"></div>
+            </div>
+           
+            <div className="horizontalLine"></div>
+            <div className="d-flex justify-content-around">
+              <div className="verticalLine visibilityNone"></div>
+              <div className="verticalLine"></div>
+              <div className="verticalLine visibilityNone"></div>
+              <div className="verticalLine"></div>
+              <div className="verticalLine visibilityNone"></div>
+              <div className="verticalLine"></div>
+            </div>
+            <div className="row mx-0">
+              <div className="col-2 text-light text-center visibilityNone">
+                <p className="text-light">Shared Ride</p>
+                <h6>(Live)</h6>
+              </div>
+              <div className="col-2 text-light text-center">
+                <p className="text-light">Personal Ride</p>
+                <h6>(Live)</h6>
+              </div>
+              <div className="col-2 text-light text-center visibilityNone">
+                <p className="text-light">Family Ride</p>
+                <h6>(Aug 2025)</h6>
+              </div>
+              <div className="col-2 text-light text-center">
+                <p className="text-light">Family Ride</p>
+                <h6>(Oct 2025)</h6>
+              </div>
+              <div className="col-2 text-light text-center visibilityNone">
+                <p className="text-light">Airport Ride</p>
+                <h6>(Sep 2025)</h6>
+              </div>
+              <div className="col-2 text-light text-center">
+                <p className="text-light">Intercity Ride</p>
+                <h6>(Dec 2025)</h6>
+              </div>
+            </div>
+            </div>
           </div>
         </div>
       </div>
@@ -121,7 +197,7 @@ export default function Home() {
           <div className="faqTableMain">
             {[1, 2, 3, 4, 5]?.map((v, i) => {
               return (
-                <div className={"faqCard p-5  " + (i!=0 && "mt-5")}>
+                <div className={"faqCard p-5  " + (i != 0 && "mt-5")}>
                   <div className="d-flex align-items-center">
                     <div>
                       <p className="textLightGreen pb-3">
@@ -135,7 +211,7 @@ export default function Home() {
                       </p>
                     </div>
                     <div className="ms-5">
-                      <img src="/greenPlusIcon.png"/>
+                      <img src="/greenPlusIcon.png" />
                     </div>
                   </div>
                 </div>
@@ -144,7 +220,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
