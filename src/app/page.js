@@ -236,15 +236,15 @@ export default function Home() {
           <div className="faqTableMain">
             {faqList?.map((v, i) => {
               return (
-                <div className={"faqCard p-5  " + (i != 0 && "mt-5")}>
+                <div className={"faqCard p-5  " + (i != 0 && "mt-5")} onClick={()=>setSelectedIndex(i)} >
                   <div className="d-flex align-items-center justify-content-between">
                     <div>
-                      <p className="textLightGreen pb-3">{v?.question}</p>
-                      {selectedIndex == i && <p className="textLight">{v?.answer}</p>}
+                      <p className="textLightGreen ">{v?.question}</p>
+                      {selectedIndex == i && <p className="textLight pt-3">{v?.answer}</p>}
                       
                     </div>
                     <div className="ms-5">
-                      <img src="/greenPlusIcon.png" />
+                      <img src= {selectedIndex != i ? "/greenPlusIcon.png" : "/greenMinusIcon.png"} />
                     </div>
                   </div>
                 </div>

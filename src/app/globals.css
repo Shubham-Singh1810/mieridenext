@@ -108,6 +108,7 @@
 .faqCard {
   border-radius: 20px;
   background: #000;
+  cursor: pointer;
 }
 .roadMapDiv {
   margin-top: 50px;
