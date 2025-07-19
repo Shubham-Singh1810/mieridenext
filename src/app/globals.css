@@ -37,19 +37,19 @@
 
 /* home section started */
 .heroSection {
-  background: #1C1C1C;
+  background: #1c1c1c;
   padding: 50px 0px;
   z-index: 100;
 }
 
-.heroSectionBg{
+.heroSectionBg {
   background: url("/contactBg.png");
   border: 1px solid red;
   height: 100vh;
   background-size: 100% 100%;
   position: relative;
   top: -60vh;
- 
+
   z-index: -1;
 }
 
@@ -109,56 +109,56 @@
   border-radius: 20px;
   background: #000;
 }
-.roadMapDiv{
+.roadMapDiv {
   margin-top: 50px;
   height: 400px;
 }
-.roadMapDiv span{
+.roadMapDiv span {
   position: relative;
   top: 15px;
-color: #101010;
-font-family: Nexa;
-font-size: 150px;
-font-style: normal;
-font-weight: 700;
+  color: #101010;
+  font-family: Nexa;
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 700;
 
-text-align: center;
-margin-bottom: 0px;
+  text-align: center;
+  margin-bottom: 0px;
 }
-.horizontalLine{
+.horizontalLine {
   height: 5px;
   width: 100%;
   background-color: #fff;
 }
-.verticalLine{
+.verticalLine {
   height: 100px;
   width: 2px;
   background-color: #fff;
 }
-.visibilityNone{
+.visibilityNone {
   visibility: hidden;
 }
-.contentRoadMan{
+.contentRoadMan {
   position: relative;
   top: -450px;
   margin-bottom: -450px;
 }
-.contentRoadMan p{
-color: #FFF;
-font-family: Nexa;
-font-size: 25px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+.contentRoadMan p {
+  color: #fff;
+  font-family: Nexa;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
-.contentRoadMan h6{
-color: #FFF;
-text-align: center;
-font-family: nexa;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+.contentRoadMan h6 {
+  color: #fff;
+  text-align: center;
+  font-family: nexa;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 /* home section ended */
 
@@ -228,12 +228,7 @@ line-height: normal;
   font-weight: 700 !important;
 }
 /* why us ended */
-/* footer stared  */
-.footerUpper {
-  background: #d0ff13;
-  padding: 50px 0px;
-}
-/* footer ended */
+
 /* advertice with us started */
 .homeCard li {
   color: #fff;
@@ -429,12 +424,12 @@ line-height: normal;
   border-bottom: 1px solid #fff;
   padding: 12px;
   margin-bottom: 25px;
-  color: #FFF;
-font-family: Nexa;
-font-size: 16px;
-font-style: normal;
-font-weight: 200;
-line-height: normal;
+  color: #fff;
+  font-family: Nexa;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
 }
 .contactForm button {
   width: 100%;
@@ -449,36 +444,235 @@ line-height: normal;
   font-weight: 700;
   line-height: normal;
 }
-.contactContent h6{
-  color: #D0FF13;
-font-family: Nexa;
-font-size: 30px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+.contactContent h6 {
+  color: #d0ff13;
+  font-family: Nexa;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
-.contactContent h4{
-  color: #FFF;
-font-family: Nexa;
-font-size: 50px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+.contactContent h4 {
+  color: #fff;
+  font-family: Nexa;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
-.contactContent p{
-  color: #FFF;
-font-family: Nexa;
-font-size: 30px;
-font-style: normal;
-font-weight: 300;
-line-height: normal;
+.contactContent p {
+  color: #fff;
+  font-family: Nexa;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
-.font700{
+.font700 {
   font-weight: 700 !important;
 }
-.conatctBg{
+.conatctBg {
   background: url("/contactBg.png");
   background-size: 100% 100%;
   opacity: 0.8;
 }
 /* contact us ended */
+/* footer stared  */
+.footerUpper {
+  background: #d0ff13;
+  padding: 50px 0px;
+}
+.footerNavMain a {
+  color: #1c1c1c;
+  font-family: Nexa;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+.scannerImage {
+  border-radius: 10px;
+  /* border: 1px solid #D0FF13; */
+}
+.scannerImage img {
+  height: 90px;
+  width: 90px;
+}
+.scannerCard {
+  padding: 20px;
+  border-radius: 20px;
+  background: #1c1c1c;
+
+  /* shadow 1 */
+  box-shadow: 5px 10px 30px 0px rgba(0, 0, 0, 0.2);
+}
+.footerBtnGroup img {
+  height: 40px;
+}
+.scannerCard p {
+  color: #fff;
+  font-family: Nexa;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+.socialIcons img {
+  height: 40px;
+  margin-right: 12px;
+}
+/* footer ended */
+
+/* our services start */
+.bookRideBtn {
+  border-radius: 15px;
+  background: #d0ff13;
+  height: 70px;
+  width: 330px;
+  padding: 0px 10px;
+}
+.bookRideBtn p {
+  color: #000;
+  position: relative;
+  top: 2px;
+  font-family: Nexa;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+
+  margin-bottom: 0px;
+}
+.rigtArrowDiv {
+  height: 60px;
+  width: 60px;
+  background-color: #101010;
+  border-radius: 10px;
+}
+.coreServiceCard {
+  border-radius: 20px;
+  border: 2px solid #d0ff13;
+  background: #000;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+}
+.coreServiceCard h5 {
+  color: #d0ff13;
+  font-family: Nexa;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.coreServiceCard p {
+  color: #fff;
+  font-family: Nexa;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.serviceCloudBg {
+  background: url("/sendBg.png") no-repeat;
+  background-size: 100% auto; /* Width full, height auto */
+  background-position: bottom;
+  height: 50%; /* Optional: Define how much height container should show */
+  overflow: hidden;
+}
+.serviceOntarioDiv {
+  padding: 40px;
+  border-radius: 30px;
+  background: #d0ff13;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.25);
+  margin: 0px 50px;
+  position: relative;
+  top: -100px;
+  margin-bottom: -100px;
+}
+.comingSoonCard {
+  border-radius: 20px;
+  border: 2px solid #fff;
+  background: #000;
+  padding: 20px;
+}
+.comingSoonCard h5 {
+  color: #fff;
+  font-family: Nexa;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.comingSoonCard p {
+  color: #fff;
+  font-family: Nexa;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px;
+}
+.howWorksCard p {
+  font-size: 18px !important;
+}
+.howWorksCard {
+  padding-bottom: 0px;
+}
+
+/* our services end */
+/* blogs started */
+.font200 {
+  font-weight: 200 !important;
+}
+.blogHeroImg img {
+  border-radius: 20px;
+  border: 1px solid #d0ff13;
+}
+.blogCategoryDiv{
+  margin: 50px 0px;
+}
+.blogCategoryDiv p{
+  color: #FFF;
+
+font-family: Nexa;
+font-size: 25px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%; /* 37.5px */
+padding: 20px 60px 10px 60px;
+margin-bottom: 0px;
+}
+.borderBottom{
+  border-bottom: 2px solid #D0FF13;
+}
+.blogBg {
+  background: url("/blogBg.png") no-repeat;
+  background-size: 100% auto; /* Width full, height auto */
+  background-position: top; /* Center vertically and horizontally */
+  height: 50%; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.blogCard{
+  border-radius: 20px;
+border: 1px solid #FFF;
+background: #000;
+}
+.blogCard img{
+  border-radius: 20px 20px 0px 0px;
+}
+.blogCard p{
+  color: #FFF;
+font-family: Nexa;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.blogCard h6{
+  color: #FFF;
+font-family: Nexa;
+font-size: 16px;
+font-style: normal;
+font-weight: 200;
+line-height: normal;
+}
+/* blogs end */

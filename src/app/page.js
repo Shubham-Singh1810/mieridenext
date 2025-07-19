@@ -1,7 +1,37 @@
+"use client"
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-
+import {useState} from "react"
 export default function Home() {
+  const faqList = [
+    {
+      question: "What is Mie Pay, and how does it enhance my ride experience?",
+      answer:
+        "Mie Pay is our secure in-app wallet, enabling quick, hassle-free payments and seamless transactions for all your ride needs.​",
+    },
+    {
+      question: "Can I schedule rides in advance on Mie Ride?",
+      answer:
+        "Mie Pay is our secure in-app wallet, enabling quick, hassle-free payments and seamless transactions for all your ride needs.​",
+    },
+    {
+      question: "How does Mie Ride ensure my safety during trips?",
+      answer:
+        "Mie Pay is our secure in-app wallet, enabling quick, hassle-free payments and seamless transactions for all your ride needs.​",
+    },
+    {
+      question: "What should I do if I leave an item in the vehicle?",
+      answer:
+        "Mie Pay is our secure in-app wallet, enabling quick, hassle-free payments and seamless transactions for all your ride needs.​",
+    },
+    {
+      question:
+        "Are there any loyalty rewards or referral benefits for Mie Ride?",
+      answer:
+        "Mie Pay is our secure in-app wallet, enabling quick, hassle-free payments and seamless transactions for all your ride needs.​",
+    },
+  ];
+  const [selectedIndex, setSelectedIndex]=useState(0)
   return (
     <div>
       <Navbar selectedItem="Home" />
@@ -16,24 +46,33 @@ export default function Home() {
                   Welcome to Mie Ride – your friendly neighborhood ride sharing
                   solution without the surge price surprises. We get it – life’s
                   expensive enough without wondering what your rideshare will
-                  cost. That’s why we keep it simple with fixed prices you can
-                  count on. Need a ride-sharing service to campus? Running late
-                  for work? Airport dash? We've got you covered.{" "}
+                  cost. That’s why we keep it simple with{" "}
+                  <span className="textLightGreen">
+                    fixed prices you can count on.
+                  </span>{" "}
+                  Need a ride-sharing service to campus? Running late for work?
+                  Airport dash? We've got you covered.{" "}
                 </p>
                 <p>
                   We’re real people connecting drivers and passengers heading
                   the same way, helping everyone save money while making
                   Ontario’s roads less crowded. Our drivers are your neighbors,
                   earning extra on routes they already take. No corporate feel.
-                  No robots setting prices. Just real cab services for real
-                  people.{" "}
+                  No robots setting prices. Just{" "}
+                  <span className="textLightGreen">
+                    real cab services for real people.
+                  </span>{" "}
                 </p>
                 <p>
                   {" "}
                   Whether you're in Caledon, Brampton, Kitchener, Mississauga,
                   Barrie, Vaughan, Mie Ride keeps your fare fair – every time.
-                  And we’re not stopping there. We’re expanding soon, bringing
-                  fixed-price rideshare to even more communities across Ontario.{" "}
+                  And we’re not stopping there.{" "}
+                  <span className="textLightGreen">
+                    We’re expanding soon,
+                  </span>{" "}
+                  bringing fixed-price rideshare to even more communities across
+                  Ontario.{" "}
                 </p>
                 <p className="mb-5 pb-3">
                   {" "}
@@ -113,76 +152,76 @@ export default function Home() {
           </div>
           <div className="roadMapDiv contentRoadMan d-flex justify-content-center align-items-center  w-100">
             <div className="w-100">
-<div className="row mx-0">
-              <div className="col-2 text-light text-center">
-                <p className="text-light">Shared Ride</p>
-                <h6>(Live)</h6>
+              <div className="row mx-0">
+                <div className="col-2 text-light text-center">
+                  <p className="text-light">Shared Ride</p>
+                  <h6>(Live)</h6>
+                </div>
+                <div className="col-2 text-light text-center visibilityNone">
+                  <p className="text-light">Personal Ride</p>
+                  <h6>(Live)</h6>
+                </div>
+                <div className="col-2 text-light text-center">
+                  <p className="text-light">Family Ride</p>
+                  <h6>(Aug 2025)</h6>
+                </div>
+                <div className="col-2 text-light text-center visibilityNone">
+                  <p className="text-light">Family Ride</p>
+                  <h6>(Oct 2025)</h6>
+                </div>
+                <div className="col-2 text-light text-center">
+                  <p className="text-light">Airport Ride</p>
+                  <h6>(Sep 2025)</h6>
+                </div>
+                <div className="col-2 text-light text-center visibilityNone">
+                  <p className="text-light">Intercity Ride</p>
+                  <h6>(Dec 2025)</h6>
+                </div>
               </div>
-              <div className="col-2 text-light text-center visibilityNone">
-                <p className="text-light">Personal Ride</p>
-                <h6>(Live)</h6>
+              <div className="d-flex justify-content-around">
+                <div className="verticalLine"></div>
+                <div className="verticalLine visibilityNone"></div>
+                <div className="verticalLine"></div>
+                <div className="verticalLine visibilityNone"></div>
+                <div className="verticalLine"></div>
+                <div className="verticalLine visibilityNone"></div>
               </div>
-              <div className="col-2 text-light text-center">
-                <p className="text-light">Family Ride</p>
-                <h6>(Aug 2025)</h6>
+
+              <div className="horizontalLine"></div>
+              <div className="d-flex justify-content-around">
+                <div className="verticalLine visibilityNone"></div>
+                <div className="verticalLine"></div>
+                <div className="verticalLine visibilityNone"></div>
+                <div className="verticalLine"></div>
+                <div className="verticalLine visibilityNone"></div>
+                <div className="verticalLine"></div>
               </div>
-              <div className="col-2 text-light text-center visibilityNone">
-                <p className="text-light">Family Ride</p>
-                <h6>(Oct 2025)</h6>
+              <div className="row mx-0">
+                <div className="col-2 text-light text-center visibilityNone">
+                  <p className="text-light">Shared Ride</p>
+                  <h6>(Live)</h6>
+                </div>
+                <div className="col-2 text-light text-center">
+                  <p className="text-light">Personal Ride</p>
+                  <h6>(Live)</h6>
+                </div>
+                <div className="col-2 text-light text-center visibilityNone">
+                  <p className="text-light">Family Ride</p>
+                  <h6>(Aug 2025)</h6>
+                </div>
+                <div className="col-2 text-light text-center">
+                  <p className="text-light">Family Ride</p>
+                  <h6>(Oct 2025)</h6>
+                </div>
+                <div className="col-2 text-light text-center visibilityNone">
+                  <p className="text-light">Airport Ride</p>
+                  <h6>(Sep 2025)</h6>
+                </div>
+                <div className="col-2 text-light text-center">
+                  <p className="text-light">Intercity Ride</p>
+                  <h6>(Dec 2025)</h6>
+                </div>
               </div>
-              <div className="col-2 text-light text-center">
-                <p className="text-light">Airport Ride</p>
-                <h6>(Sep 2025)</h6>
-              </div>
-              <div className="col-2 text-light text-center visibilityNone">
-                <p className="text-light">Intercity Ride</p>
-                <h6>(Dec 2025)</h6>
-              </div>
-            </div>
-            <div className="d-flex justify-content-around">
-              <div className="verticalLine"></div>
-              <div className="verticalLine visibilityNone"></div>
-              <div className="verticalLine"></div>
-              <div className="verticalLine visibilityNone"></div>
-              <div className="verticalLine"></div>
-              <div className="verticalLine visibilityNone"></div>
-            </div>
-           
-            <div className="horizontalLine"></div>
-            <div className="d-flex justify-content-around">
-              <div className="verticalLine visibilityNone"></div>
-              <div className="verticalLine"></div>
-              <div className="verticalLine visibilityNone"></div>
-              <div className="verticalLine"></div>
-              <div className="verticalLine visibilityNone"></div>
-              <div className="verticalLine"></div>
-            </div>
-            <div className="row mx-0">
-              <div className="col-2 text-light text-center visibilityNone">
-                <p className="text-light">Shared Ride</p>
-                <h6>(Live)</h6>
-              </div>
-              <div className="col-2 text-light text-center">
-                <p className="text-light">Personal Ride</p>
-                <h6>(Live)</h6>
-              </div>
-              <div className="col-2 text-light text-center visibilityNone">
-                <p className="text-light">Family Ride</p>
-                <h6>(Aug 2025)</h6>
-              </div>
-              <div className="col-2 text-light text-center">
-                <p className="text-light">Family Ride</p>
-                <h6>(Oct 2025)</h6>
-              </div>
-              <div className="col-2 text-light text-center visibilityNone">
-                <p className="text-light">Airport Ride</p>
-                <h6>(Sep 2025)</h6>
-              </div>
-              <div className="col-2 text-light text-center">
-                <p className="text-light">Intercity Ride</p>
-                <h6>(Dec 2025)</h6>
-              </div>
-            </div>
             </div>
           </div>
         </div>
@@ -195,20 +234,14 @@ export default function Home() {
             cancellations, and using our cab services near me.
           </p>
           <div className="faqTableMain">
-            {[1, 2, 3, 4, 5]?.map((v, i) => {
+            {faqList?.map((v, i) => {
               return (
                 <div className={"faqCard p-5  " + (i != 0 && "mt-5")}>
-                  <div className="d-flex align-items-center">
+                  <div className="d-flex align-items-center justify-content-between">
                     <div>
-                      <p className="textLightGreen pb-3">
-                        What is Mie Pay, and how does it enhance my ride
-                        experience?
-                      </p>
-                      <p className="textLight">
-                        Mie Pay is our secure in-app wallet, enabling quick,
-                        hassle-free payments and seamless transactions for all
-                        your ride needs.​
-                      </p>
+                      <p className="textLightGreen pb-3">{v?.question}</p>
+                      {selectedIndex == i && <p className="textLight">{v?.answer}</p>}
+                      
                     </div>
                     <div className="ms-5">
                       <img src="/greenPlusIcon.png" />
