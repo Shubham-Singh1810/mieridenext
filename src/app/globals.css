@@ -32,7 +32,13 @@
   padding: 15px 20px;
   cursor: pointer;
 }
+.mobileNav {
+  display: none;
+}
 
+.overlay {
+  display: none;
+}
 /* navbar ended */
 
 /* home section started */
@@ -160,6 +166,16 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.yellowCircle {
+  position: relative;
+  top: -125px;
+  background-color: #d0ff13;
+  height: 40px;
+  width: 40px;
+  margin-bottom: -35px;
+  border-radius: 50%;
+  filter: drop-shadow(2px 2px 10px #d0ff13) drop-shadow(-2px -2px 10px #d0ff13);
 }
 /* home section ended */
 
@@ -491,6 +507,19 @@
   font-weight: 200;
   line-height: normal;
 }
+.footerBottom {
+  background: #000;
+}
+.footerBottom p {
+  margin-bottom: 0px;
+  color: #fff;
+  font-family: Nexa;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 15px 0px 13px 0px;
+}
 .scannerImage {
   border-radius: 10px;
   /* border: 1px solid #D0FF13; */
@@ -627,22 +656,23 @@
   border-radius: 20px;
   border: 1px solid #d0ff13;
 }
-.blogCategoryDiv{
+.blogCategoryDiv {
   margin: 50px 0px;
 }
-.blogCategoryDiv p{
-  color: #FFF;
+.blogCategoryDiv p {
+  color: #fff;
+  cursor: pointer;
 
-font-family: Nexa;
-font-size: 25px;
-font-style: normal;
-font-weight: 700;
-line-height: 150%; /* 37.5px */
-padding: 20px 60px 10px 60px;
-margin-bottom: 0px;
+  font-family: Nexa;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 37.5px */
+  padding: 20px 60px 10px 60px;
+  margin-bottom: 0px;
 }
-.borderBottom{
-  border-bottom: 2px solid #D0FF13;
+.borderBottom {
+  border-bottom: 2px solid #d0ff13;
 }
 .blogBg {
   background: url("/blogBg.png") no-repeat;
@@ -651,29 +681,288 @@ margin-bottom: 0px;
   height: 50%; /* Adjust as needed */
   overflow: hidden;
 }
-
-.blogCard{
-  border-radius: 20px;
-border: 1px solid #FFF;
-background: #000;
+.blogBgBottom {
+  background: url("/blogDetailBg.png") no-repeat;
+  background-size: 100% auto; /* Width full, height auto */
+  background-position: center; /* Center vertically and horizontally */
+  height: 50%; /* Adjust as needed */
+  overflow: hidden;
 }
-.blogCard img{
+
+.blogCard {
+  border-radius: 20px;
+  border: 1px solid #fff;
+  background: #000;
+  cursor: pointer;
+}
+.blogCard img {
   border-radius: 20px 20px 0px 0px;
 }
-.blogCard p{
-  color: #FFF;
-font-family: Nexa;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+.blogCard p {
+  color: #fff;
+  font-family: Nexa;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
-.blogCard h6{
-  color: #FFF;
-font-family: Nexa;
-font-size: 16px;
-font-style: normal;
-font-weight: 200;
-line-height: normal;
+.sharingDiv p {
+  color: #fff;
+  font-family: Nexa;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.sharingDiv {
+  padding: 15px 0px;
+  border-bottom: 1px solid #6b6b6b;
+}
+.sharingDiv img {
+  margin-left: 20px;
+}
+
+.sharingDivBottom p {
+  color: #fff;
+  font-family: Nexa;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.copyLinkDiv {
+  border-left: 1px solid #fff;
+}
+.sharingDivBottom img {
+  margin-left: 20px;
+}
+.tagsDiv {
+  padding: 30px 0px;
+  border-bottom: 1px solid #6b6b6b;
+  border-top: 1px solid #6b6b6b;
+}
+.tagsDiv h5 {
+  color: #fff;
+  font-family: Nexa;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 100px;
+  padding-top: 15px;
+}
+.tagsDiv button {
+  padding: 15px 24px;
+  border-radius: 25px;
+  background: #d0ff13;
+  border: none;
+  color: #1c1c1c;
+  font-family: Nexa;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 10px;
+}
+.blogCard h6 {
+  color: #fff;
+  font-family: Nexa;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
 }
 /* blogs end */
+
+/* responsive code */
+@media (max-width: 500px) {
+  /* Mobile Nav */
+  .mobileNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #101010;
+    z-index: 2001;
+    transform: translateY(-100%);
+    transition: transform 0.4s ease-in-out;
+    overflow-y: auto;
+    pointer-events: none;
+    opacity: 0;
+  }
+  .mobileNav.show {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2000;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .mobileNavItem p {
+    color: white;
+  }
+  .brandMain img {
+    height: 50px;
+    position: relative;
+    top: 5px;
+  }
+  .bar img {
+    height: 40px;
+  }
+  /* home start */
+  .heroSection {
+    padding: 30px 0px;
+  }
+  .heroSection h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .heroSection p {
+    font-size: 14px;
+  }
+  .downloadBtnGroup {
+    width: 100%;
+  }
+  .downloadBtnGroup img {
+    width: 48%;
+  }
+  .homeBrandName {
+    height: 23px;
+    margin-bottom: 40px;
+  }
+  .ourStoryMain {
+    background: #d0ff13;
+    padding: 20px 0px;
+  }
+  .ourStoryMain h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .ourStoryMain p {
+    font-size: 14px;
+  }
+  .aboutCard {
+    padding: 25px;
+  }
+  .aboutCard h5 {
+    font-size: 20px;
+  }
+  .aboutCard p {
+    font-size: 14px;
+  }
+  .homeCard button {
+    font-size: 16px;
+  }
+  .roadMapDiv {
+    margin-top: 0px;
+    height: 280px;
+  }
+  .roadMapDiv span {
+    font-size: 60px;
+  }
+  .contentRoadMan {
+    position: relative;
+    top: -274px;
+    margin-bottom: -274px;
+  }
+  .contentRoadMan p {
+    font-size: 12px;
+  }
+  .contentRoadMan h6 {
+    font-size: 10px;
+  }
+  .verticalLine {
+    height: 40px;
+  }
+  .yellowCircle {
+    position: relative;
+    top: -48px;
+    background-color: #d0ff13;
+    height: 13px;
+    width: 13px;
+    margin-bottom: -35px;
+    
+filter: drop-shadow(0.609px 0.609px 3.047px #D0FF13) drop-shadow(-0.609px -0.609px 3.047px #D0FF13);
+  }
+  .horizontalLine {
+    height: 2px;
+  }
+  .faqTableMain {
+    padding: 20px 0px;
+  }
+  .faqCard {
+    border-radius: 10px;
+  }
+  .faqCard img {
+    height: 25px;
+  }
+  .footerNavMain a {
+ 
+  font-size: 14px;
+  
+}
+.socialIcons img{
+  height: 20px;
+  margin-right: 12px;
+}
+.scannerCard p{
+  font-size: 12px;
+}
+.scannerCard{
+  padding: 10px;
+  border-radius: 12px;
+}
+.scannerImage img{
+  height: 70px;
+  width: 70px;
+}
+.footerUpper {
+  background: #d0ff13;
+  padding: 30px 0px;
+}
+.footerBottom p{
+  font-size: 14px;
+}
+.aboutCard img {
+  height: 50px;
+}
+.aboutCard h5{
+  height: 100%;
+  margin-left: 10px;
+  position: relative;
+  top: 5px;
+}
+.aboutCard p{
+  font-size: 14px;
+  margin-top: 12px;
+}
+.aboutCard{
+  padding: 12px;
+  border-radius: 20px;
+}
+.bookRideBtn {
+  border-radius: 10px;
+  height: 55px;
+  padding: 5px;
+}
+.rigtArrowDiv{
+  height: 40px;
+  width: 40px;
+}
+}

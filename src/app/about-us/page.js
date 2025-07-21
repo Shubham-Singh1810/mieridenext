@@ -62,9 +62,9 @@ function page() {
         <div className="container">
           <h2 className="textLight">What Sets Mie Ride Apart</h2>
           <div className="row mt-lg-5">
-            <div className="col-lg-4">
+            <div className="col-lg-4 mb-3">
               <div className="aboutCard">
-                <div className="d-lg-block d-flex align-items-center justify-content-between text-center">
+                <div className="d-lg-block d-flex align-items-center  text-center">
                   <img src="/greenLockIcon.png" />
                   <h5 className="my-lg-4">True Fixed Pricing</h5>
                 </div>
@@ -78,9 +78,9 @@ function page() {
                 </p>
               </div>
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-4 mb-3">
               <div className="aboutCard">
-                <div className="d-lg-block d-flex align-items-center justify-content-between text-center">
+                <div className="d-lg-block d-flex align-items-center  text-center">
                   <img src="/greenLocationIcon.png" />
                   <h5 className="my-lg-4">Community-Focused Ride Sharing</h5>
                 </div>
@@ -94,9 +94,9 @@ function page() {
                 </p>
               </div>
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-4 mb-3">
               <div className="aboutCard">
-                <div className="d-lg-block d-flex align-items-center justify-content-between text-center">
+                <div className="d-lg-block d-flex align-items-center  text-center">
                   <img src="/greenLockIcon.png" />
                   <h5 className="my-lg-4 mb-lg-2">Ontario-Rooted Approach</h5>
                 </div>
@@ -117,35 +117,35 @@ function page() {
       <div className="ourStoryMain bgDark ">
         <div className="container">
           <h2 className="textLight">Our Mission and Values</h2>
-          <p className="mt-3 textLightGreen">
+          <p className="mt-0 mt-md-3 textLightGreen">
             Mie Ride believes transportation should enhance lives rather than
             complicate them. Every decision reflects three core commitments:
           </p>
-          <h2 className="textLight mt-5 pt-3">Price Transparency</h2>
-          <p className="mt-3 textLightGreen">
+          <h2 className="textLight mt-5 pt-md-3">Price Transparency</h2>
+          <p className="mt-0 mt-md-3 textLightGreen">
             What you see is what you pay—every single time. Mie Ride eliminates
             the unpredictability of surge pricing, ensuring you can confidently
             plan your transportation. Whether you're searching for ride share
             service or  want to book a cab advance, our consistent pricing
             ensures there is nothing to worry about.
           </p>
-          <h2 className="textLight mt-5 pt-3">Community Connection</h2>
-          <p className="mt-3 textLightGreen">
+          <h2 className="textLight mt-5 pt-md-3">Community Connection</h2>
+          <p className="mt-0 mt-md-3  textLightGreen">
             Beyond just providing rides, Mie Ride builds meaningful connections
             between people with shared routes and destinations. Every journey
             strengthens local networks throughout Ontario communities. It's not
             just sharing cabs – it’s building community through connection.
           </p>
-          <h2 className="textLight mt-5 pt-3">Environmental Responsibility</h2>
-          <p className="mt-3 textLightGreen">
+          <h2 className="textLight mt-5 pt-md-3">Environmental Responsibility</h2>
+          <p className="mt-0 mt-md-3 textLightGreen">
             By connecting travelers heading in similar directions, Mie Ride
             reduces the number of half-empty vehicles on Ontario roads. This
             approach decreases emissions and traffic congestion with every
             shared ride, making it more than just car sharing services – it's
             smart, sustainable travel.
           </p>
-          <h2 className="textLight mt-5 pt-3">Join The Journey</h2>
-          <p className="mt-3 textLightGreen">
+          <h2 className="textLight mt-5 pt-md-3">Join The Journey</h2>
+          <p className="mt-0 mt-md-3 textLightGreen">
             Mie Ride isn't just transforming how people move throughout Ontario
             – it's changing the entire relationship between transportation,
             community, and environment. Experience a ride hauling company that

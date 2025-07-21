@@ -73,7 +73,7 @@ function page() {
         <div className="container">
           <h2 className="textLight">Our Core Services </h2>
           <div className="row pb-5 mb-5">
-            <div className="col-4 mt-auto">
+            <div className="col-md-4 col-12 mt-auto">
               <div className="coreServiceCard">
                 <h5>Personal Ride</h5>
                 <p>
@@ -86,10 +86,11 @@ function page() {
                 </p>
               </div>
             </div>
-            <div className="col-4">
-              <img src="/ourServiceMobile.png" />
+            <div className="col-md-4 col-12">
+              <img src="/ourServiceMobile.png" className="img-fluid d-block d-md-none" />
+              <img src="/ourServiceMobile.png" className=" d-none d-md-block" />
             </div>
-            <div className="col-4">
+            <div className="col-md-4 col-12">
               <div className="coreServiceCard">
                 <h5>Shared Ride</h5>
                 <p>
