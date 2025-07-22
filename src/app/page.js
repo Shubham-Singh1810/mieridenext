@@ -98,7 +98,10 @@ export default function Home() {
               </div>
             </div>
             <div className="col-md-7 col-12">
-              <img src="/heroImageNew.png" className="img-fluid" />
+              <div className="d-flex justify-content-center">
+                 <img src="/heroImageNew.png" className="img-fluid" />
+              </div>
+             
               <div className="d-block d-md-none my-5">
                 <p className=" ">
                   Welcome to Mie Ride – your friendly neighborhood ride sharing
@@ -168,8 +171,8 @@ export default function Home() {
                 </div>
                 <p>
                   Book your own private journey with fixed pricing and
-                  personalized comfort – whether you're searching for a cab
-                  company near me or a solo ride experience.
+                  personalized comfort – whether you're searching for a <span className="textLightGreen">cab
+                  company near me</span> or a solo ride experience.
                 </p>
                 <button className="mt-md-5 mt-4">Read More &#8594;</button>
               </div>
@@ -181,8 +184,8 @@ export default function Home() {
                 </div>
                 <p>
                   Travel together, split costs, reduce emissions—smart commuting
-                  for budget-conscious travelers who enjoy sharing cabs and
-                  using car sharing services.
+                  for budget-conscious travelers who enjoy <span className="textLightGreen">sharing cabs</span> and
+                 <span className="textLightGreen"> using car sharing services.</span> 
                 </p>
                 <button className="mt-md-5 mt-4">Read More &#8594;</button>
               </div>
@@ -195,7 +198,7 @@ export default function Home() {
                 <p>
                   Join our team, set your schedule, earn consistently while
                   helping others commute – your chance to drive for a growing
-                  fixed price rideshare platform.
+                 <span className="textLightGreen"> fixed price rideshare</span>  platform.
                 </p>
                 <button className="mt-md-5 mt-4">Read More &#8594;</button>
               </div>
@@ -307,7 +310,7 @@ export default function Home() {
               return (
                 <div
                   className={"faqCard p-md-5 p-3 " + (i != 0 && "mt-md-5 mt-3")}
-                  onClick={() => setSelectedIndex(i)}
+                  onClick={() => setSelectedIndex(selectedIndex==i ? null: i)}
                 >
                   <div className="d-flex align-items-center justify-content-between">
                     <div>

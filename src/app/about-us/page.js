@@ -10,13 +10,13 @@ function page() {
           <h2>Our Story</h2>
           <p className="mt-3">
             Mie Ride was born in Ontario from a simple belief: travel should
-            connect people, not just destinations. This Ontario-based ride
-            sharing service emerged when two friends confronted the same
+            connect people, not just destinations. This Ontario-based <b> ride
+            sharing</b> service emerged when two friends confronted the same
             transportation frustrations you likely face every day.
           </p>
           <p>
             The idea sparked in 2023, after yet another overpriced airport trip
-            and the familiar struggle of downtown parking. What if ride prices
+            and the familiar struggle of downtown parking. What if <b> ride prices</b> 
             could remain consistent regardless of demand? What if drivers and
             passengers heading the same way could connect, sharing both the
             journey and the cost?{" "}
@@ -24,7 +24,7 @@ function page() {
           <p>
             {" "}
             Today, that vision has grown into Ontario's most transparent
-            transportation networks – where prices stay fixed, communities grow
+            <b> transportation networks – </b> where prices stay fixed, communities grow
             stronger, and every shared journey helps reduce our environmental
             footprint.
           </p>
@@ -35,7 +35,7 @@ function page() {
           <h2 className="textLight">The Founders</h2>
           <p className="mt-3 textLight">
             Sandeep Singh and Jashan Preet have started this joint venture when
-            they watched rideshare Toronto prices spike during peak hours once
+            they watched <span className="textLightGreen"> rideshare Toronto</span>  prices spike during peak hours once
             too often. After calculating the true cost of unpredictable
             transportation on both personal budgets and business planning, they
             sketched the initial concept for Mie Ride. Their vision was
@@ -52,8 +52,8 @@ function page() {
             for everyone, regardless of technical background.
           </p>
           <p className="textLight">
-            Together, they've created more than just another ride-sharing
-            company – they've built Ontario's first truly transparent
+            Together, they've created more than just another <span className="textLightGreen"> ride-sharing
+            company –</span>  they've built Ontario's first truly transparent
             transportation network.
           </p>
         </div>
@@ -69,10 +69,10 @@ function page() {
                   <h5 className="my-lg-4">True Fixed Pricing</h5>
                 </div>
                 <p>
-                  When you search for cab services near me, chances are you'll
+                  When you search for <b><span className="textLightGreen">cab services near me,</span></b> chances are you'll
                   see prices spike during rush hour, bad weather, or local
-                  events. Not with Mie Ride. We offer  fixed pricing ride share
-                  service, fare you see is exactly what you pay—no hidden fees,
+                  events. Not with Mie Ride. We offer  <b><span className="textLightGreen">fixed pricing ride share
+                  service,</span></b>  fare you see is exactly what you pay—no hidden fees,
                   no surge pricing, no surprises. Your budget matters, and Mie
                   Ride keeps it intact.
                 </p>
@@ -89,7 +89,7 @@ function page() {
                   routes, creating networks of riders and drivers throughout
                   Ontario. These connections reduce individual transportation
                   costs while fostering community relationships that extend
-                  beyond single rides. It's a car sharing service built around
+                  beyond single rides. It's a <b><span className="textLightGreen">car sharing service</span></b>  built around
                   people and purpose.
                 </p>
               </div>
@@ -104,7 +104,7 @@ function page() {
                   Mie Ride understands local transportation needs because our
                   team lives and works right here in Ontario. From downtown
                   Toronto’s parking headaches to underserved suburban areas, our
-                  fixed price ride solutions are built for real Ontario
+                 <b><span className="textLightGreen"> fixed price ride</span></b>  solutions are built for real Ontario
                   communities—not copied from distant corporate offices. That’s
                   why we're a top choice for users searching cabs in Ontario
                   cities. 

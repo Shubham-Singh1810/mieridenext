@@ -3,19 +3,18 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 function page() {
   return (
-    <div>
+    <div className="">
       <Navbar selectedItem="Why Us?" />
-      <div className="heroSection">
+  
+      <div className="heroSection ">
         <div className="container">
           <div className="text-center">
             <h2>WHY US?</h2>
             <div className="d-flex justify-content-center d-md-block">
-
-                <img src="/brandName.png" className=" homeBrandName" />
-                </div>
-            
+              <img src="/brandName.png" className=" homeBrandName" />
+            </div>
           </div>
-          <div className="row mt-md-5 mt-3 pt-md-5">
+          <div className="row mt-md-5 mt-3 pt-md-5 whyImage">
             <div className="col-md-7 col-12 my-auto order-lg-1 order-2">
               <div className="homeLeftContent">
                 <h4 className="mb-md-4 mt-4 mt-md-0">We Put People First</h4>
@@ -26,22 +25,25 @@ function page() {
                   passengers and drivers.
                 </p>
                 <p>
-                  With our trusted ride share network, you’re always supported
-                  by a community that cares.
+                  With our trusted{" "}
+                  <b>
+                    <span className="textLightGreen">ride share</span>
+                  </b>{" "}
+                  network, you’re always supported by a community that cares.
                 </p>
               </div>
             </div>
             <div className="col-md-5 col-12 order-lg-2 order-1 d-flex justify-content-center my-auto">
-              <img src="/frame.png" className="img-fluid " />
+              <img src="/whyUs1.png" className="img-fluid " />
             </div>
           </div>
         </div>
       </div>
       <div className="heroSection bgLightGreen">
         <div className="container">
-          <div className="row ">
+          <div className="row whyImage ">
             <div className="col-md-5 col-12 d-flex justify-content-center my-auto">
-              <img src="/frame.png" className="img-fluid " />
+              <img src="/whyUs2.png" className="img-fluid " />
             </div>
             <div className="col-md-7 col-12 my-auto">
               <div className="homeLeftContent">
@@ -50,15 +52,15 @@ function page() {
                 </h4>
                 <p className="textDark">
                   No one likes surprises when it comes to transportation. That's
-                  why we've created a system with fixed pricing that stays the
-                  same regardless of traffic or weather conditions. Book in
-                  advance, know what you'll pay, and plan your budget
+                  why we've created a system with <b> fixed pricing</b> that
+                  stays the same regardless of traffic or weather conditions.
+                  Book in advance, know what you'll pay, and plan your budget
                   accordingly. For drivers, this means consistent earnings
                   without the frustration of fluctuating fares.
                 </p>
                 <p className="textDark">
-                  Experience fixed price ride sharing that removes the guesswork
-                  from every trip
+                  Experience <b> fixed price ride</b> sharing that removes the
+                  guesswork from every trip
                 </p>
               </div>
             </div>
@@ -67,18 +69,23 @@ function page() {
       </div>
       <div className="heroSection ">
         <div className="container">
-          <div className="row ">
+          <div className="row whyImage">
             <div className="col-md-7 col-12 order-lg-1 order-2 my-auto">
               <div className="homeLeftContent">
-                <h4 className="mb-md-4 mt-4 mt-md-0">Flexibility That Fits Real Life</h4>
+                <h4 className="mb-md-4 mt-4 mt-md-0">
+                  Flexibility That Fits Real Life
+                </h4>
                 <p className="">
                   Life rarely follows a perfectly straight line. Add multiple
                   stops to your journey, schedule return trips in one booking,
                   or modify your plans as needed. Drivers can set availability
                   htmlFor up to five cities and choose when they want to
                   work–because we believe transportation should adapt to your
-                  life, not the other way around. Your ride share experience
-                  should be as flexible as your day-to-day plans.
+                  life, not the other way around. Your{" "}
+                  <b>
+                    <span className="textLightGreen">ride share</span>
+                  </b>{" "}
+                  experience should be as flexible as your day-to-day plans.
                 </p>
                 <p className="">
                   Experience fixed price ride sharing that removes the guesswork
@@ -87,20 +94,22 @@ function page() {
               </div>
             </div>
             <div className="col-md-5 col-12 order-lg-2 order-1 d-flex justify-content-center my-auto">
-              <img src="/frame.png" className="img-fluid " />
+              <img src="/whyUs3.png" className="img-fluid " />
             </div>
           </div>
         </div>
       </div>
       <div className="heroSection bgLightGreen">
         <div className="container">
-          <div className="row ">
+          <div className="row whyImage">
             <div className="col-md-5 col-12 d-flex justify-content-center my-auto">
-              <img src="/frame.png" className="img-fluid " />
+              <img src="/whyUs4.png" className="img-fluid " />
             </div>
             <div className="col-md-7 col-12 my-auto">
               <div className="homeLeftContent">
-                <h4 className="mb-md-4 mt-4 mt-md-0 textDark">Complete Transparency</h4>
+                <h4 className="mb-md-4 mt-4 mt-md-0 textDark">
+                  Complete Transparency
+                </h4>
                 <p className="textDark">
                   We believe in honest, clear information at every step.
                   Passengers receive comprehensive details about their driver
@@ -110,8 +119,8 @@ function page() {
                   straightforward service.
                 </p>
                 <p className="textDark">
-                  With Mie Ride’s fixed price ride sharing, you always know
-                  exactly what you’re paying for.
+                  With Mie Ride’s <b> fixed price ride sharing,</b> you always
+                  know exactly what you’re paying for.
                 </p>
               </div>
             </div>
@@ -120,7 +129,7 @@ function page() {
       </div>
       <div className="heroSection ">
         <div className="container">
-          <div className="row ">
+          <div className="row whyImage">
             <div className="col-lg-7 col-12 order-lg-1 order-2 my-auto">
               <div className="homeLeftContent">
                 <h4 className="mb-md-4 mt-4 mt-md-0 ">Your Security Matters</h4>
@@ -133,22 +142,25 @@ function page() {
                   that arise during a journey.
                 </p>
                 <p className="">
-                  Safety and trust are the foundation of every ride share you
-                  take with us
+                  Safety and trust are the foundation of every{" "}
+                  <b>
+                    <span className="textLightGreen">ride share</span>
+                  </b>{" "}
+                  you take with us
                 </p>
               </div>
             </div>
             <div className="col-md-5 col-12 order-lg-2 order-1 d-flex justify-content-center my-auto">
-              <img src="/frame.png" className="img-fluid " />
+              <img src="/whyUs5.png" className="img-fluid " />
             </div>
           </div>
         </div>
       </div>
       <div className="heroSection bgLightGreen">
         <div className="container">
-          <div className="row ">
+          <div className="row whyImage">
             <div className="col-md-5 col-12 d-flex justify-content-center my-auto">
-              <img src="/frame.png" className="img-fluid " />
+              <img src="/whyUs6.png" className="img-fluid " />
             </div>
             <div className="col-md-7 col-12 my-auto">
               <div className="homeLeftContent">
@@ -163,8 +175,8 @@ function page() {
                   efficient way to move through our communities.
                 </p>
                 <p className="textDark">
-                  Our fixed price ride sharing model helps strengthen local ties
-                  every day.
+                  Our <b> fixed price ride sharing</b> model helps strengthen
+                  local ties every day.
                 </p>
               </div>
             </div>
@@ -173,10 +185,12 @@ function page() {
       </div>
       <div className="heroSection ">
         <div className="container">
-          <div className="row ">
+          <div className="row whyImage">
             <div className="col-md-7 col-12 order-2 order-lg-1 my-auto">
               <div className="homeLeftContent">
-                <h4 className="mb-md-4 mt-4 mt-md-0 ">Streamlined Experience</h4>
+                <h4 className="mb-md-4 mt-4 mt-md-0 ">
+                  Streamlined Experience
+                </h4>
                 <p className="">
                   From our intuitive booking process to our hassle-free payment
                   system, we've eliminated unnecessary complications. Book rides
@@ -184,22 +198,27 @@ function page() {
                   transportation that simply works the way it should.
                 </p>
                 <p className="">
-                  We make fixed price ride sharing effortless from booking to
-                  drop-off.
+                  We make{" "}
+                  <b>
+                    <span className="textLightGreen">
+                      fixed price ride sharing
+                    </span>
+                  </b>{" "}
+                  effortless from booking to drop-off.
                 </p>
               </div>
             </div>
             <div className="col-md-5 col-12 order-lg-2 order-1 d-flex justify-content-center my-auto">
-              <img src="/frame.png" className="img-fluid " />
+              <img src="/whyUs7.png" className="img-fluid " />
             </div>
           </div>
         </div>
       </div>
       <div className="heroSection bgLightGreen">
         <div className="container">
-          <div className="row ">
+          <div className="row whyImage">
             <div className="col-md-5 col-12 d-flex justify-content-center my-auto">
-              <img src="/frame.png" className="img-fluid " />
+              <img src="/whyUs8.png" className="img-fluid " />
             </div>
             <div className="col-md-7 col-12 my-auto">
               <div className="homeLeftContent">
@@ -214,8 +233,8 @@ function page() {
                   from a system designed to value and encourage excellence.
                 </p>
                 <p className="textDark">
-                  Quality and reliability come standard with every ride share on
-                  Mie Ride.
+                  Quality and reliability come standard with every{" "}
+                  <b>ride share</b> on Mie Ride.
                 </p>
               </div>
             </div>
@@ -244,4 +263,4 @@ function page() {
   );
 }
 
-export default page
+export default page;

@@ -54,7 +54,6 @@ function page() {
         <div className="container">
           <h2 className="textLight">Your Journey, Your Way</h2>
           <p className="mt-3 textLight">
-            Sandeep Singh and Jashan Preet have started this joint venture when
             Travel smarter with Mie Ride's versatile transportation solutions.
             Whether you're commuting to work, planning a night out, or looking
             to earn as a driver, we've got you covered!
@@ -72,9 +71,8 @@ function page() {
       <div className="ourStoryMain bgDark serviceCloudBg ">
         <div className="container ">
           <h2 className="textLight d-none d-md-block">Our Core Services </h2>
-          
+
           <div className="row pb-5 mb-5 ourServiceBgMobile py-5">
-            
             <div className="col-md-4 col-8 mt-auto ms-auto">
               <div className="coreServiceCard">
                 <h5>Personal Ride</h5>
@@ -88,12 +86,21 @@ function page() {
                 </p>
               </div>
             </div>
-            <div className="col-8 d-block d-md-none mobileIconTilted" >
-              <img src="/ourServiceMobile.png" className=" d-block d-md-none img-fluid" />
+            <div className="col-8 d-block d-md-none mobileIconTilted">
+              <img
+                src="/ourServiceMobileWithFrame.png"
+                className=" d-block d-md-none img-fluid"
+              />
             </div>
             <div className="col-md-4 col-12 d-none d-md-block">
-              <img src="/ourServiceMobile.png" className="img-fluid d-block d-md-none" />
-              <img src="/ourServiceMobile.png" className=" d-none d-md-block" />
+              <img
+                src="/ourServiceMobileWithFrame.png"
+                className="img-fluid d-block d-md-none"
+              />
+              <img
+                src="/ourServiceMobileWithFrame.png"
+                className=" d-none d-md-block"
+              />
             </div>
             <div className="col-md-4 col-8  mt-md-0">
               <div className="coreServiceCard">
@@ -155,7 +162,11 @@ function page() {
                   <div className="comingSoonCard  h-100 howWorksCard">
                     <h5>{v?.title}</h5>
                     {v?.pointsArr?.map((para, i) => {
-                      return <p>{para[0]} <span>{para[1]}</span></p>;
+                      return (
+                        <p>
+                          {para[0]} <span>{para[1]}</span>
+                        </p>
+                      );
                     })}
                   </div>
                 </div>

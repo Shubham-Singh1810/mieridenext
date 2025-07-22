@@ -32,7 +32,7 @@ function page() {
           <div className="homeLeftContent pt-md-5 mt-5">
             <h4 className="mb-md-4">Why this works so well</h4>
             <p className="">
-              When someone books a ride through our ride sharing company, they
+              When someone books a ride through our <b><span className="textLightGreen"> ride sharing company,</span></b> they
               spend time looking at their screen – checking the driver's arrival
               time, following the route, and reviewing their trip details.
               Similarly, our drivers regularly interact with their dashboard
@@ -43,7 +43,7 @@ function page() {
               impression. Unlike billboards that people drive past in seconds or
               online ads that get scrolled by, our platform keeps your message
               visible during meaningful moments—when people are actively engaged
-              with the rideshare providers they trust.
+              with the <b><span className="textLightGreen">rideshare providers they trust.</span></b> 
             </p>
           </div>
 
@@ -250,35 +250,35 @@ function page() {
               <li>Guaranteed viewership</li>
               <p>
                 Your ad appears exactly where people must look while using
-                rideshare through Toronto.
+               <b><span className="textLightGreen">rideshare through Toronto.</span></b> 
               </p>
             </div>
             <div className="diffrenceDiv mb-md-4 mb-3">
               <li>Targeted audience</li>
               <p>
                 Reach specific neighborhoods or rider demographics of people
-                using cab services near me mechanism.
+                using <b><span className="textLightGreen"> cab services near me</span></b>  mechanism.
               </p>
             </div>
             <div className="diffrenceDiv mb-md-4 mb-3">
               <li>Longer viewing time</li>
               <p>
                 Not just a quick glimpse, but extended exposure compared to
-                standard taxi near me ads.
+                standard <b><span className="textLightGreen"> taxi near me</span></b> ads.
               </p>
             </div>
             <div className="diffrenceDiv mb-md-4 mb-3">
               <li>Better engagement</li>
               <p>
                 Appears when people are already actively using the app to search
-                for cabs nearby.
+                for <b><span className="textLightGreen"> cabs nearby.</span></b> 
               </p>
             </div>
             <div className="diffrenceDiv mb-md-4 mb-3">
               <li>Cost-effective</li>
               <p>
                 More impressions for your advertising budget with Ontario’s most
-                community-focused ride hauling company.
+                community-focused <b><span className="textLightGreen">ride hauling company.</span></b> 
               </p>
             </div>
           </div>

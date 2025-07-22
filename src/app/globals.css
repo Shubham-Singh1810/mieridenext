@@ -13,6 +13,19 @@
 .textLightGreen {
   color: #d0ff13 !important;
 }
+b{
+  font-weight: 700 !important;
+}
+@media (min-width: 1441px) {
+  .container {
+    width: 100%;
+     max-width: calc(100% - 160px) !important;
+    margin-left: 80px !important;
+    margin-right: 80px !important;
+  }
+}
+
+
 /* navbar started */
 .navbarMain {
   background: #000;
@@ -117,7 +130,7 @@
 }
 .faqCard {
   border-radius: 20px;
-  background: #000;
+  background: #101010;
   cursor: pointer;
 }
 .roadMapDiv {
@@ -247,6 +260,9 @@
 .bottomP {
   font-size: 20px;
   font-weight: 700 !important;
+}
+.whyImage img{
+  border-radius: 30px !important;
 }
 /* why us ended */
 
@@ -1105,12 +1121,12 @@
   .outerBorder {
     border-radius: 25px;
     transform: rotate(10deg);
-    height: 370px;
+    height: 380px;
   }
   .innerBorder {
     border-radius: 25px;
     transform: rotate(-10deg);
-    height: 370px;
+    height: 380px;
   }
   .mobileSliderForPartner {
     overflow-x: scroll;
@@ -1185,5 +1201,11 @@
 }
 .mobileIconTilted{
   margin: -50px 0px -40px 0px !important;
+}
+.whyImage img{
+  border-radius: 10px !important;
+  height: 170px;
+  width: 100%;
+   object-fit: cover; 
 }
 }
