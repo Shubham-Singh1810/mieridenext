@@ -51,12 +51,14 @@
   padding: 50px 0px;
   z-index: 100;
 }
-
+.paddingVertical0{
+  padding: 0px 0px !important;
+}
 .heroSectionBg {
-   /* background: url("/blogDetailBg.png") no-repeat; */
+   background: url("/blogDetailBg.png") no-repeat !important;
   background-size: 100% auto; /* Width full, height auto */
   background-position: center;
-  height: 50%; /* Optional: Define how much height container should show */
+  padding: 40px 0px;
   overflow: hidden;
 
 }

@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <div>
       <Navbar selectedItem="Home" />
-      <div className="heroSection">
+      <div className="heroSection paddingVertical0">
         <div className="heroSectionBg">
           <div className="container">
           <div className="row">
@@ -157,7 +157,8 @@ export default function Home() {
       </div>
 
       <div className="ourStoryMain  bgDark serviceSectionMarginTop">
-        <div className="container">
+       
+          <div className="container">
           <h2 className="textLight">Services</h2>
           <div className="row mt-lg-5">
             <div className="col-lg-4 mb-4 mb-md-0">
@@ -201,6 +202,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+        
+        
       </div>
       <div className="ourStoryMain bgDark ">
         <div className="container">
