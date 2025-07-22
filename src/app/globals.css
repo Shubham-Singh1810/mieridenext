@@ -5,7 +5,7 @@
   color: #1c1c1c !important;
 }
 .bgDark {
-  background-color: #1c1c1c !important;
+  background-color: #000 !important;
 }
 .textLight {
   color: #fff !important;
@@ -15,8 +15,12 @@
 }
 /* navbar started */
 .navbarMain {
-  background: #1c1c1c;
+  background: #000;
   padding: 10px 0px;
+}
+.navRight{
+  background: #1C1C1C;
+  border-radius: 30px;
 }
 .navbarMain p {
   color: #fff;
@@ -43,20 +47,18 @@
 
 /* home section started */
 .heroSection {
-  background: #1c1c1c;
+  background: #000;
   padding: 50px 0px;
   z-index: 100;
 }
 
 .heroSectionBg {
-  background: url("/contactBg.png");
-  border: 1px solid red;
-  height: 100vh;
-  background-size: 100% 100%;
-  position: relative;
-  top: -60vh;
+   /* background: url("/blogDetailBg.png") no-repeat; */
+  background-size: 100% auto; /* Width full, height auto */
+  background-position: center;
+  height: 50%; /* Optional: Define how much height container should show */
+  overflow: hidden;
 
-  z-index: -1;
 }
 
 .heroSection h2 {
@@ -897,8 +899,9 @@
     height: 13px;
     width: 13px;
     margin-bottom: -35px;
-    
-filter: drop-shadow(0.609px 0.609px 3.047px #D0FF13) drop-shadow(-0.609px -0.609px 3.047px #D0FF13);
+
+    filter: drop-shadow(0.609px 0.609px 3.047px #d0ff13)
+      drop-shadow(-0.609px -0.609px 3.047px #d0ff13);
   }
   .horizontalLine {
     height: 2px;
@@ -913,56 +916,272 @@ filter: drop-shadow(0.609px 0.609px 3.047px #D0FF13) drop-shadow(-0.609px -0.609
     height: 25px;
   }
   .footerNavMain a {
- 
-  font-size: 14px;
+    font-size: 14px;
+  }
+  .socialIcons img {
+    height: 20px;
+    margin-right: 12px;
+  }
+  .scannerCard p {
+    font-size: 12px;
+  }
+  .scannerCard {
+    padding: 10px;
+    border-radius: 12px;
+  }
+  .scannerImage img {
+    height: 70px;
+    width: 70px;
+  }
+  .footerUpper {
+    background: #d0ff13;
+    padding: 30px 0px;
+  }
+  .footerBottom p {
+    font-size: 14px;
+  }
+  .aboutCard img {
+    height: 50px;
+  }
+  .aboutCard h5 {
+    height: 100%;
+    margin-left: 10px;
+    position: relative;
+    top: 5px;
+  }
+  .aboutCard p {
+    font-size: 14px;
+    margin-top: 12px;
+  }
+  .aboutCard {
+    padding: 12px;
+    border-radius: 20px;
+  }
+  .bookRideBtn {
+    border-radius: 10px;
+    height: 55px;
+    padding: 5px;
+  }
+  .rigtArrowDiv {
+    height: 40px;
+    width: 40px;
+  }
+  .coreServiceCard {
+    border-radius: 6px;
+    padding: 10px;
+  }
+  .coreServiceCard h5 {
+    font-size: 12px;
+  }
+  .coreServiceCard p {
+    font-size: 10px;
+  }
+.ourServiceBgMobile {
+  background: url("/sendBg.png") no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  height: 100%;
+  overflow: hidden;
   
 }
-.socialIcons img{
-  height: 20px;
-  margin-right: 12px;
+
+  .serviceOntarioDiv {
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin: 0px 0px;
+    top: -110px;
+    margin-bottom: -110px;
+  }
+  .serviceOntarioDiv h2 {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  .serviceOntarioDiv p {
+    font-size: 10px;
+  }
+  .comingSoonCard {
+    border-radius: 20px;
+    padding: 20px 15px;
+  }
+  .comingSoonCard h5 {
+    font-size: 22px;
+  }
+  .comingSoonCard p {
+    font-size: 14px;
+    line-height: normal;
+  }
+  .howWorksCard {
+    padding: 10px;
+    border-radius: 12px;
+  }
+  .howWorksCard p {
+    font-size: 12px !important;
+  }
+  .howWorksCard h5 {
+    font-size: 20px !important;
+  }
+  .homeLeftContent h4 {
+    font-size: 16px;
+  }
+  .homeLeftContent p {
+    font-size: 14px;
+  }
+  .blogHeroImg img {
+    border-radius: 5px;
+  }
+  .blogCard {
+    border-radius: 5px;
+  }
+  .blogCard img {
+    border-radius: 5px 5px 0px 0px;
+  }
+  .blogCard p {
+    font-size: 10px;
+  }
+  .blogCard h6 {
+    font-size: 10px;
+    margin-bottom: 0px;
+  }
+  .blogCategoryDiv {
+    margin: 30px 0px;
+  }
+  .blogCategoryDiv p {
+    font-size: 20px;
+    padding: 10px 30px 10px 30px;
+  }
+  .adverticeCardResponsive h5 {
+    font-size: 20px;
+  }
+  .adverticeCardResponsive li {
+    font-size: 14px;
+  }
+  .mobilePaddingAdvertiseCard {
+    padding: 10px 5px !important;
+    border-radius: 15px !important;
+  }
+  .greenTableHead {
+    border-radius: 5px;
+  }
+  .greenTableHead p {
+    font-size: 12px;
+    padding: 8px 0px;
+  }
+  .tableRow p {
+    font-size: 10px;
+    padding: 6px 0px;
+    border-radius: 5px;
+    margin: 0px 12px;
+    height: 100%;
+  }
+  .diffrenceDiv li {
+    font-size: 20px;
+  }
+  .diffrenceDiv p {
+    font-size: 14px;
+    margin-left: 20px;
+  }
+  .letsConnectBtn {
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 13px 0px 12px 0px;
+    width: 100%;
+  }
+  .partnerCard {
+    margin: 25px;
+  }
+  .partnerCard ul {
+    padding: 0px 8px 0px 8px;
+  }
+  .partnerCard li {
+    font-size: 12.5px;
+  }
+  .partnerCard img {
+    height: 70px;
+    top: -33px;
+    margin-bottom: -33px;
+  }
+  .outerBorder {
+    border-radius: 25px;
+    transform: rotate(10deg);
+    height: 370px;
+  }
+  .innerBorder {
+    border-radius: 25px;
+    transform: rotate(-10deg);
+    height: 370px;
+  }
+  .mobileSliderForPartner {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    padding: 20px;
+  }
+  .mobileH4 {
+    font-size: 20px !important;
+  }
+  .paddingTop0 {
+    padding-top: 0px !important;
+  }
+  .partnerBottomH5 {
+    font-size: 20px !important;
+  }
+  .contactCard {
+    border-radius: 12px;
+
+    padding: 14px;
+    margin-bottom: 20px;
+  }
+  .contactCard p {
+    font-size: 20px;
+  }
+  .contactCard h5 {
+    font-size: 25px;
+  }
+  .contactCard img {
+    height: 50px;
+  }
+  .conatctBg h2 {
+    text-align: left;
+    font-size: 25px;
+  }
+  .contactSubHeading {
+    font-size: 16px;
+  }
+  .contactFormResponsive h6{
+    font-size: 25px;
+    margin-bottom: 0px;
+  }
+  .contactFormResponsive h4{
+    font-size: 35px;
+    
+  }
+  .contactFormResponsive p{
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+.contactForm {
+  padding: 30px 20px;
+  border-radius: 10px 10px 0px 0px;
+ 
 }
-.scannerCard p{
-  font-size: 12px;
-}
-.scannerCard{
-  padding: 10px;
-  border-radius: 12px;
-}
-.scannerImage img{
-  height: 70px;
-  width: 70px;
-}
-.footerUpper {
-  background: #d0ff13;
-  padding: 30px 0px;
-}
-.footerBottom p{
-  font-size: 14px;
-}
-.aboutCard img {
-  height: 50px;
-}
-.aboutCard h5{
-  height: 100%;
-  margin-left: 10px;
+.contactForm small{
   position: relative;
-  top: 5px;
+  top: -20px;
 }
-.aboutCard p{
-  font-size: 14px;
-  margin-top: 12px;
-}
-.aboutCard{
+.inputDiv input {
+ 
+ 
+  border-bottom: 1px solid #fff;
   padding: 12px;
-  border-radius: 20px;
+  margin-bottom: 25px;
+  color: #fff;
+  font-family: Nexa;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
 }
-.bookRideBtn {
-  border-radius: 10px;
-  height: 55px;
-  padding: 5px;
-}
-.rigtArrowDiv{
-  height: 40px;
-  width: 40px;
+.mobileIconTilted{
+  margin: -50px 0px -40px 0px !important;
 }
 }

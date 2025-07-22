@@ -61,7 +61,7 @@ function page() {
           </p>
           <div className="d-flex mt-4">
             <div className="d-flex align-items-center justify-content-between  bookRideBtn">
-              <p>Book a Ride Now</p>
+              <p className="ms-2 ms-md-0">Book a Ride Now</p>
               <div className="rigtArrowDiv d-flex justify-content-center align-items-center">
                 <img src="/rightArrow.png" />
               </div>
@@ -69,11 +69,13 @@ function page() {
           </div>
         </div>
       </div>
-      <div className="ourStoryMain bgDark serviceCloudBg">
-        <div className="container">
-          <h2 className="textLight">Our Core Services </h2>
-          <div className="row pb-5 mb-5">
-            <div className="col-md-4 col-12 mt-auto">
+      <div className="ourStoryMain bgDark serviceCloudBg ">
+        <div className="container ">
+          <h2 className="textLight d-none d-md-block">Our Core Services </h2>
+          
+          <div className="row pb-5 mb-5 ourServiceBgMobile py-5">
+            
+            <div className="col-md-4 col-8 mt-auto ms-auto">
               <div className="coreServiceCard">
                 <h5>Personal Ride</h5>
                 <p>
@@ -86,11 +88,14 @@ function page() {
                 </p>
               </div>
             </div>
-            <div className="col-md-4 col-12">
+            <div className="col-8 d-block d-md-none mobileIconTilted" >
+              <img src="/ourServiceMobile.png" className=" d-block d-md-none img-fluid" />
+            </div>
+            <div className="col-md-4 col-12 d-none d-md-block">
               <img src="/ourServiceMobile.png" className="img-fluid d-block d-md-none" />
               <img src="/ourServiceMobile.png" className=" d-none d-md-block" />
             </div>
-            <div className="col-md-4 col-12">
+            <div className="col-md-4 col-8  mt-md-0">
               <div className="coreServiceCard">
                 <h5>Shared Ride</h5>
                 <p>
@@ -111,7 +116,7 @@ function page() {
         <div className="container">
           <div className="serviceOntarioDiv">
             <h2 className="text-center">Serving Across Ontario</h2>
-            <p className="mt-3 ">
+            <p className="mt-md-3 mt-0">
               Mie Mie Ride isn’t just another ride share service — it’s your
               go-to transportation partner across Ontario. From personal rides
               in busy cities like Brampton and Barrie to everyday cab services
@@ -129,10 +134,10 @@ function page() {
       </div>
       <div className="ourStoryMain bgDark">
         <div className="container">
-          <h2 className="textLightGreen mb-5">The What's Coming Soon</h2>
+          <h2 className="textLightGreen mb-md-5">The What's Coming Soon</h2>
           {commingSoonData?.map((v, i) => {
             return (
-              <div className="comingSoonCard mb-4">
+              <div className="comingSoonCard mb-md-4 mb-3">
                 <h5>{v?.title}</h5>
                 <p>{v?.para}</p>
               </div>
@@ -142,12 +147,12 @@ function page() {
       </div>
       <div className="ourStoryMain bgDark">
         <div className="container">
-          <h2 className="textLightGreen mb-5">How It Works</h2>
+          <h2 className="textLightGreen mb-md-5">How It Works</h2>
           <div className="row">
             {howItWorksData?.map((v, i) => {
               return (
-                <div className="col-6">
-                  <div className="comingSoonCard mb-4 h-100 howWorksCard">
+                <div className="col-md-6 col-12 mb-4 mb-md-0">
+                  <div className="comingSoonCard  h-100 howWorksCard">
                     <h5>{v?.title}</h5>
                     {v?.pointsArr?.map((para, i) => {
                       return <p>{para[0]} <span>{para[1]}</span></p>;

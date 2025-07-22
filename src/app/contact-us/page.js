@@ -40,11 +40,11 @@ function page() {
         <div className="conatctBg">
           <div className="container">
             <div className="">
-              <h2>Contact Us</h2>
-              <h5 className="contactSubHeading">Get in Touch</h5>
+              <h2 className="">Contact Us</h2>
+              <h5 className="contactSubHeading ">Get in Touch</h5>
             </div>
-            <div className="row my-5 pb-4">
-              <div className="col-4">
+            <div className="row my-md-5 my-4 pb-md-4 ">
+              <div className="col-md-4 col-12">
                 <div className="contactCard bgDarkContactCard">
                   <div className="d-flex align-items-center">
                     <div className="">
@@ -57,7 +57,7 @@ function page() {
                   </div>
                 </div>
               </div>
-              <div className="col-4">
+              <div className="col-md-4 col-12">
                 <div className="contactCard bgDarkContactCard">
                   <div className="d-flex align-items-center">
                     <div className="">
@@ -70,7 +70,7 @@ function page() {
                   </div>
                 </div>
               </div>
-              <div className="col-4">
+              <div className="col-md-4 col-12">
                 <div className="contactCard bgDarkContactCard">
                   <div className="d-flex align-items-center">
                     <div className="">
@@ -85,7 +85,7 @@ function page() {
               </div>
             </div>
             <div className="row my-5">
-              <div className="col-7">
+              <div className="col-md-7 col-12 order-md-1 order-2">
                 <div className="contactForm">
                   <form onSubmit={formik.handleSubmit} >
 <div className="inputDiv">
@@ -153,9 +153,9 @@ function page() {
                   
                 </div>
               </div>
-              <div className="col-5 my-auto contactContent ps-5">
+              <div className="col-md-5 col-12 order-md-2 order-1 my-auto contactFormResponsive contactContent ps-md-5">
                 <h6>Have any Query</h6>
-                <h4 className="mb-5 mt-4">CONTACT US</h4>
+                <h4 className="mb-md-5 mb-4 mt-md-4 mt-3">CONTACT US</h4>
                 <p className="font700">Need help?</p>
                 <p>
                   Our friendly team is available 24/7 to assist with bookings,

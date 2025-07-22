@@ -115,10 +115,12 @@ function page() {
         <div className="container">
           <div className="text-center">
             <h2>PARTNER WITH</h2>
-            <img src="/brandName.png" className="img-fluid" />
+            <div className="d-flex justify-content-center d-md-block">
+              <img src="/brandName.png" className=" homeBrandName" />
+            </div>
           </div>
-          <div className="homeLeftContent pt-5 mt-5">
-            <h4 className="mb-4 textLightGreen">
+          <div className="homeLeftContent pt-md-5 mt-md-5">
+            <h4 className="mb-md-4 textLightGreen">
               Let's grow together and transform transportation for your
               organization
             </h4>
@@ -137,12 +139,36 @@ function page() {
       <div className="heroSection">
         <div className="container">
           <div className="homeLeftContent ">
-            <h4 className="mb-4">Who we work with</h4>
+            <h4 className="mb-md-4 mb-0">Who we work with</h4>
 
-            <div className="row g-5 m-0">
+            <div className="row g-5 m-0 d-md-flex d-none">
               {infoArr?.map((v, i) => {
                 return (
-                  <div className="col-4">
+                  <div className="col-md-4 col-12">
+                    <div className="partnerCard ">
+                      <div className="outerBorder ">
+                        <div className="innerBorder px-3">
+                          <div className="d-flex justify-content-center">
+                            <img src={`/partnerIcon${i + 1}.png`} />
+                          </div>
+
+                          <h6>{v?.title}</h6>
+                          <ul>
+                            {v?.listArr?.map((listVal, i) => {
+                              return <li>{listVal}</li>;
+                            })}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+             <div className=" m-0 d-flex d-md-none mobileSliderForPartner">
+              {infoArr?.map((v, i) => {
+                return (
+                  <div className="col-md-4 col-12">
                     <div className="partnerCard ">
                       <div className="outerBorder ">
                         <div className="innerBorder px-3">
@@ -170,8 +196,8 @@ function page() {
         <div className="container">
           <div className="ourStoryMain bgDark ">
             <div className="container">
-              <h4 className="textLight">What Sets Mie Ride Apart</h4>
-              <div className="row g-5 mt-3 d-flex justify-content-center">
+              <h4 className="textLight mobileH4">What Sets Mie Ride Apart</h4>
+              <div className="row g-md-5 g-3 mt-md-3 mt-2 d-flex justify-content-center">
                 <div className="col-lg-4">
                   <div className="aboutCard whyChooseCard">
                     <div className="d-lg-block d-flex align-items-center justify-content-between text-center">
@@ -275,10 +301,10 @@ function page() {
         </div>
       </div>
 
-      <div className="heroSection ">
+      <div className="heroSection paddingTop0">
         <div className="container">
           <div className="homeLeftContent ">
-            <h4 className="mb-4 ">What our partners say</h4>
+            <h4 className="mb-md-4 mb-2">What our partners say</h4>
             <div className="partnerSayDiv">
               <p>
                 The reliable service has made a huge difference for our
@@ -317,22 +343,22 @@ function page() {
           </div>
         </div>
       </div>
-      <div className="heroSection ">
+      <div className="heroSection paddingTop0">
         <div className="container">
           <div className="homeLeftContent">
-            <h4 className="mb-5 textLightGreen">
+            <h4 className="mb-md-5 textLightGreen">
               Ready to discuss a custom partnership?
             </h4>
-            <div className="partnerSayDiv mb-5">
+            <div className="partnerSayDiv mb-md-5">
               <p>
                 Want to see our service in action first? Ask about our
                 partnership trial program, where your organization can
                 experience our service before making a long-term commitment.
               </p>
             </div>
-            <h5>Contact our dedicated partnerships team directly:</h5>
-            <div className="row mt-5 mb-4 ">
-              <div className="col-4">
+            <h5 className="mt-5 mt-md-0 partnerBottomH5">Contact our dedicated partnerships team directly:</h5>
+            <div className="row mt-md-5 mt-4 mb-md-4 ">
+              <div className="col-md-4 col-12 h-100">
                 <div className="contactCard">
                   <div className="d-flex align-items-center">
                     <div className="">
@@ -345,7 +371,7 @@ function page() {
                   </div>
                 </div>
               </div>
-              <div className="col-4">
+              <div className="col-md-4 col-12 h-100">
                 <div className="contactCard">
                   <div className="d-flex align-items-center">
                     <div className="">
@@ -358,7 +384,7 @@ function page() {
                   </div>
                 </div>
               </div>
-              <div className="col-4">
+              <div className="col-md-4 col-12 h-100">
                 <div className="contactCard">
                   <div className="d-flex align-items-center">
                     <div className="">
@@ -372,19 +398,21 @@ function page() {
                 </div>
               </div>
             </div>
-            <div className="partnerSayDiv mt-5">
-
-            <p className="font700">Let's talk about your transportation needs and how we can create the perfect solution for your organization.</p>
+            <div className="partnerSayDiv mt-md-5 mt-3">
+              <p className="font700">
+                Let's talk about your transportation needs and how we can create
+                the perfect solution for your organization.
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div className="heroSection">
+      <div className="heroSection paddingTop0">
         <div className="container">
           <div className="homeLeftContent">
             <div className="text-center">
               <h4>Schedule a No-Obligation Consultation</h4>
-              <button className="letsConnectBtn mt-4">Get in Touch</button>
+              <button className="letsConnectBtn mt-md-4 mt-3">Get in Touch</button>
             </div>
           </div>
         </div>

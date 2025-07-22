@@ -9,7 +9,7 @@ function Navbar({ selectedItem }) {
     { name: "Home", path: "/" },
     { name: "About Us", path: "/about-us" },
     { name: "Our Services", path: "/our-services" },
-    { name: "Why Us", path: "/why-us" },
+    { name: "Why Us?", path: "/why-us" },
     { name: "Blogs", path: "/blogs" },
     { name: "Advertise with Us", path: "/advertise-with-us" },
     { name: "Partner with Us", path: "/partner-with-us" },
@@ -46,7 +46,7 @@ function Navbar({ selectedItem }) {
             >
               <p
                 className={`${
-                  selectedItem === v.name ? "bgLightGreen textDark" : ""
+                  selectedItem === v.name ? "textLightGreen" : ""
                 }`}
               >
                 {v.name}

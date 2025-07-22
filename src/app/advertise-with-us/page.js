@@ -9,10 +9,13 @@ function page() {
         <div className="container">
           <div className="text-center">
             <h2>Advertise WITH</h2>
-            <img src="/brandName.png" className="img-fluid" />
+            <div className="d-flex justify-content-center d-md-block">
+
+                <img src="/brandName.png" className=" homeBrandName" />
+                </div>
           </div>
-          <div className="homeLeftContent pt-5 mt-5">
-            <h4 className="mb-4">
+          <div className="homeLeftContent pt-md-5 mt-md-5">
+            <h4 className="mb-md-4">
               Put your brand where people will see it – every single trip with
               our growing Ontario-based ride share platform.
             </h4>
@@ -26,8 +29,8 @@ function page() {
               their entire journey.
             </p>
           </div>
-          <div className="homeLeftContent pt-5 mt-5">
-            <h4 className="mb-4">Why this works so well</h4>
+          <div className="homeLeftContent pt-md-5 mt-5">
+            <h4 className="mb-md-4">Why this works so well</h4>
             <p className="">
               When someone books a ride through our ride sharing company, they
               spend time looking at their screen – checking the driver's arrival
@@ -44,14 +47,14 @@ function page() {
             </p>
           </div>
 
-          <div className="homeLeftContent pt-5 mt-5">
+          <div className="homeLeftContent pt-md-5 mt-5">
             <div className="">
               <h2 className="textLight">Two powerful placement options</h2>
-              <div className="row mt-lg-5">
-                <div className="col-lg-6 mb-4">
-                  <div className="aboutCard homeCard pt-4 pb-3">
+              <div className="row mt-lg-5 mt-3 adverticeCardResponsive">
+                <div className="col-lg-6 mb-md-4 mb-3">
+                  <div className="aboutCard homeCard pt-md-4 pb-md-3 mobilePaddingAdvertiseCard">
                     <div className="">
-                      <h5 className="mb-4">Rider Dashboard Ads:</h5>
+                      <h5 className="mb-md-4">Rider Dashboard Ads:</h5>
                     </div>
                     <div>
                       <ul>
@@ -75,10 +78,10 @@ function page() {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-6 mb-4">
-                  <div className="aboutCard homeCard pt-4 pb-3">
+                <div className="col-lg-6 mb-md-4 mb-3">
+                  <div className="aboutCard homeCard pt-md-4 pb-md-3 mobilePaddingAdvertiseCard">
                     <div className="">
-                      <h5 className="mb-4">Driver Dashboard Ads:</h5>
+                      <h5 className="mb-md-4">Driver Dashboard Ads:</h5>
                     </div>
                     <div>
                       <ul>
@@ -102,10 +105,10 @@ function page() {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-6 mb-4">
-                  <div className="aboutCard homeCard pt-4 pb-3">
+                <div className="col-lg-6 mb-md-4 mb-3">
+                  <div className="aboutCard homeCard pt-md-4 pb-md-3 mobilePaddingAdvertiseCard">
                     <div className="">
-                      <h5 className="mb-4">User On Route Page Ads:</h5>
+                      <h5 className="mb-md-4">User On Route Page Ads:</h5>
                     </div>
                     <div>
                       <ul>
@@ -129,10 +132,10 @@ function page() {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-6 mb-4">
-                  <div className="aboutCard homeCard pt-4 pb-3">
+                <div className="col-lg-6 mb-md-4 mb-3">
+                  <div className="aboutCard homeCard pt-md-4 pb-md-3 mobilePaddingAdvertiseCard">
                     <div className="">
-                      <h5 className="mb-4">User End Receipt Ads:</h5>
+                      <h5 className="mb-md-4">User End Receipt Ads:</h5>
                     </div>
                     <div>
                       <ul>
@@ -169,8 +172,8 @@ function page() {
               Advertising packages designed for real results
             </h4>
             <div>
-              <div className="row mx-0 mt-5  greenTableHead">
-                <div className="col-3">
+              <div className="row mx-0 mt-md-5  greenTableHead">
+                <div className="col-3 ">
                   <p>Packages</p>
                 </div>
                 <div className="col-3">
@@ -180,7 +183,7 @@ function page() {
                   <p>What's included</p>
                 </div>
               </div>
-              <div className="row  tableRow mb-4 mt-5">
+              <div className="row  tableRow mb-4 mt-md-5 mt-3">
                 <div className="col-3 p-0">
                   <p>Quick Exposure</p>
                 </div>
@@ -242,36 +245,36 @@ function page() {
       <div className="heroSection ">
         <div className="container">
           <div className="homeLeftContent">
-            <h4 className="mb-5 textLightGreen">What makes this different?</h4>
-            <div className="diffrenceDiv mb-4">
+            <h4 className="mb-md-5 mb-3 textLightGreen">What makes this different?</h4>
+            <div className="diffrenceDiv mb-md-4 mb-3">
               <li>Guaranteed viewership</li>
               <p>
                 Your ad appears exactly where people must look while using
                 rideshare through Toronto.
               </p>
             </div>
-            <div className="diffrenceDiv mb-4">
+            <div className="diffrenceDiv mb-md-4 mb-3">
               <li>Targeted audience</li>
               <p>
                 Reach specific neighborhoods or rider demographics of people
                 using cab services near me mechanism.
               </p>
             </div>
-            <div className="diffrenceDiv mb-4">
+            <div className="diffrenceDiv mb-md-4 mb-3">
               <li>Longer viewing time</li>
               <p>
                 Not just a quick glimpse, but extended exposure compared to
                 standard taxi near me ads.
               </p>
             </div>
-            <div className="diffrenceDiv mb-4">
+            <div className="diffrenceDiv mb-md-4 mb-3">
               <li>Better engagement</li>
               <p>
                 Appears when people are already actively using the app to search
                 for cabs nearby.
               </p>
             </div>
-            <div className="diffrenceDiv mb-4">
+            <div className="diffrenceDiv mb-md-4 mb-3">
               <li>Cost-effective</li>
               <p>
                 More impressions for your advertising budget with Ontario’s most
@@ -286,7 +289,7 @@ function page() {
           <div className="homeLeftContent">
             <div className="text-center">
               <h4>Ready to book your spot?</h4>
-              <button className="letsConnectBtn mt-4">Lets Connect</button>
+              <button className="letsConnectBtn mt-md-4 mt-2 mb-4 mb-md-0">Lets Connect</button>
             </div>
           </div>
         </div>

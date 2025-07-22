@@ -23,7 +23,7 @@ function page() {
   const getBlogListFunc = async () => {
     setShowSkelton(true);
     try {
-      let response = await getBlogListServ(payload);
+      let response = await getBlogListServ(payload.category_id =="All" ? {} : payload);
       if (response?.data?.statusCode == "200") {
         setBlogList(response?.data?.data);
       }
@@ -57,9 +57,9 @@ function page() {
 
       <div className="ourStoryMain bgDark blogBg">
         <div className="container">
-          <div className="row mb-5 pb-5">
-            <div className="col-6 my-auto">
-              <h2 className="textLight">Your Journey, Your Way</h2>
+          <div className="row mb-md-5 mb-0 pb-md-5">
+            <div className="col-md-6 col-12 my-auto order-2 order-md-1">
+              <h2 className="textLight mt-3 mt-md-0 d-none d-md-block">Your Journey, Your Way</h2>
               <p className="mt-3 textLight">
                 {showSkelton ? (
                   <Skeleton width="100%" height={30} />
@@ -80,13 +80,14 @@ function page() {
                 </div>
               </div>
             </div>
-            <div className="col-6 blogHeroImg">
+            <div className="col-md-6 col-12 order-1 order-md-2 blogHeroImg">
+               <h2 className="textLight mt-3 mt-md-0 d-block d-md-none">Your Journey, Your Way</h2>
               {showSkelton ? (
                 <Skeleton width="100%" height={300} borderRadius={20} />
               ) : (
                 <img
                   className="img-fluid"
-                  src="https://api.mieride.ca/storage/Blog/7/blogImage.png"
+                  src={Image_Base_Url+blogList[0]?.image}
                 />
               )}
             </div>
@@ -105,21 +106,21 @@ function page() {
             {showSkelton
               ? [1, 2, 3, 4, 5, 6]?.map((v, i) => {
                   return (
-                    <div className="col-12 col-lg-4 mb-4">
+                    <div className="col-md-4 col-6 mb-md-4 mb-3 px-md-3 px-2">
                       <Skeleton width="100%" height={300} borderRadius={20} />
                     </div>
                   );
                 })
               : blogList?.map((v, i) => {
                   return (
-                    <div className="col-4 mb-4">
-                      <div className="blogCard" onClick={() => router.push("/blogs/" + v?.slug)}>
+                    <div className="col-md-4 col-6 mb-md-4 mb-3 px-md-3 px-2">
+                      <div className="blogCard h-100" onClick={() => router.push("/blogs/" + v?.slug)}>
                         <img
                           className="img-fluid"
                           src={Image_Base_Url + v?.image}
                           alt="Fixed Price, Flexible Routes"
                         />
-                        <div className="p-3">
+                        <div className="p-md-3 p-1 py-2">
                           <p>{v?.title}</p>
                           <h6 className="mt-2">
                             {moment(v?.created_at).format("MMM DD, YYYY")}

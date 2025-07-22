@@ -12,31 +12,32 @@ export default function Home() {
     {
       question: "Can I schedule rides in advance on Mie Ride?",
       answer:
-        "Mie Pay is our secure in-app wallet, enabling quick, hassle-free payments and seamless transactions for all your ride needs.​",
+        "Yes, you can pre-book rides to ensure timely pickups, especially for important appointments or airport transfers.​​",
     },
     {
       question: "How does Mie Ride ensure my safety during trips?",
       answer:
-        "Mie Pay is our secure in-app wallet, enabling quick, hassle-free payments and seamless transactions for all your ride needs.​",
+        "We offer in-app communication, live ride tracking, and driver details, ensuring transparency and safety throughout your journey.​​",
     },
     {
       question: "What should I do if I leave an item in the vehicle?",
       answer:
-        "Mie Pay is our secure in-app wallet, enabling quick, hassle-free payments and seamless transactions for all your ride needs.​",
+        "Report the lost item through the app; we'll assist in connecting you with the driver to retrieve your belongings.​​",
     },
     {
       question:
         "Are there any loyalty rewards or referral benefits for Mie Ride?",
       answer:
-        "Mie Pay is our secure in-app wallet, enabling quick, hassle-free payments and seamless transactions for all your ride needs.​",
+        "Yes, refer friends to Mie Ride and earn rewards through our referral program. Details are available within the app.​​",
     },
   ];
   const [selectedIndex, setSelectedIndex] = useState(0);
   return (
     <div>
       <Navbar selectedItem="Home" />
-      <div className="heroSection transparentDarkBg">
-        <div className="container">
+      <div className="heroSection">
+        <div className="heroSectionBg">
+          <div className="container">
           <div className="row">
             <div className="col-md-5 col-12">
               <div className="homeLeftContent">
@@ -97,7 +98,7 @@ export default function Home() {
               </div>
             </div>
             <div className="col-md-7 col-12">
-              <img src="/heroSectionImage.png" className="img-fluid" />
+              <img src="/heroImageNew.png" className="img-fluid" />
               <div className="d-block d-md-none my-5">
                 <p className=" ">
                   Welcome to Mie Ride – your friendly neighborhood ride sharing
@@ -150,10 +151,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* <div className="heroSectionBg"></div> */}
+        </div>
+        
+        
       </div>
 
-      <div className="ourStoryMain bgDark serviceSectionMarginTop">
+      <div className="ourStoryMain  bgDark serviceSectionMarginTop">
         <div className="container">
           <h2 className="textLight">Services</h2>
           <div className="row mt-lg-5">

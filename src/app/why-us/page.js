@@ -4,21 +4,25 @@ import Footer from "../components/Footer";
 function page() {
   return (
     <div>
-      <Navbar selectedItem="Why Us" />
+      <Navbar selectedItem="Why Us?" />
       <div className="heroSection">
         <div className="container">
           <div className="text-center">
             <h2>WHY US?</h2>
-            <img src="/brandName.png" className="img-fluid" />
+            <div className="d-flex justify-content-center d-md-block">
+
+                <img src="/brandName.png" className=" homeBrandName" />
+                </div>
+            
           </div>
-          <div className="row mt-5 pt-5">
-            <div className="col-7 my-auto">
+          <div className="row mt-md-5 mt-3 pt-md-5">
+            <div className="col-md-7 col-12 my-auto order-lg-1 order-2">
               <div className="homeLeftContent">
-                <h4 className="mb-4">We Put People First</h4>
+                <h4 className="mb-md-4 mt-4 mt-md-0">We Put People First</h4>
                 <p className="">
                   At Mie Ride, we understand that transportation is about your
                   time, your plans, your comfort, and your peace of mind. We've
-                  built our service around real human needs – for both
+                  built our service around real human needs – htmlFor both
                   passengers and drivers.
                 </p>
                 <p>
@@ -27,7 +31,7 @@ function page() {
                 </p>
               </div>
             </div>
-            <div className="col-5 d-flex justify-content-center my-auto">
+            <div className="col-md-5 col-12 order-lg-2 order-1 d-flex justify-content-center my-auto">
               <img src="/frame.png" className="img-fluid " />
             </div>
           </div>
@@ -36,12 +40,12 @@ function page() {
       <div className="heroSection bgLightGreen">
         <div className="container">
           <div className="row ">
-            <div className="col-5 d-flex justify-content-center my-auto">
+            <div className="col-md-5 col-12 d-flex justify-content-center my-auto">
               <img src="/frame.png" className="img-fluid " />
             </div>
-            <div className="col-7 my-auto">
+            <div className="col-md-7 col-12 my-auto">
               <div className="homeLeftContent">
-                <h4 className="mb-4 textDark">
+                <h4 className="mb-md-4 mt-4 mt-md-0 textDark">
                   Predictability You Can Count On
                 </h4>
                 <p className="textDark">
@@ -64,14 +68,14 @@ function page() {
       <div className="heroSection ">
         <div className="container">
           <div className="row ">
-            <div className="col-7 my-auto">
+            <div className="col-md-7 col-12 order-lg-1 order-2 my-auto">
               <div className="homeLeftContent">
-                <h4 className="mb-4 ">Flexibility That Fits Real Life</h4>
+                <h4 className="mb-md-4 mt-4 mt-md-0">Flexibility That Fits Real Life</h4>
                 <p className="">
                   Life rarely follows a perfectly straight line. Add multiple
                   stops to your journey, schedule return trips in one booking,
                   or modify your plans as needed. Drivers can set availability
-                  for up to five cities and choose when they want to
+                  htmlFor up to five cities and choose when they want to
                   work–because we believe transportation should adapt to your
                   life, not the other way around. Your ride share experience
                   should be as flexible as your day-to-day plans.
@@ -82,7 +86,7 @@ function page() {
                 </p>
               </div>
             </div>
-            <div className="col-5 d-flex justify-content-center my-auto">
+            <div className="col-md-5 col-12 order-lg-2 order-1 d-flex justify-content-center my-auto">
               <img src="/frame.png" className="img-fluid " />
             </div>
           </div>
@@ -91,12 +95,12 @@ function page() {
       <div className="heroSection bgLightGreen">
         <div className="container">
           <div className="row ">
-            <div className="col-5 d-flex justify-content-center my-auto">
+            <div className="col-md-5 col-12 d-flex justify-content-center my-auto">
               <img src="/frame.png" className="img-fluid " />
             </div>
-            <div className="col-7 my-auto">
+            <div className="col-md-7 col-12 my-auto">
               <div className="homeLeftContent">
-                <h4 className="mb-4 textDark">Complete Transparency</h4>
+                <h4 className="mb-md-4 mt-4 mt-md-0 textDark">Complete Transparency</h4>
                 <p className="textDark">
                   We believe in honest, clear information at every step.
                   Passengers receive comprehensive details about their driver
@@ -117,9 +121,9 @@ function page() {
       <div className="heroSection ">
         <div className="container">
           <div className="row ">
-            <div className="col-7 my-auto">
+            <div className="col-lg-7 col-12 order-lg-1 order-2 my-auto">
               <div className="homeLeftContent">
-                <h4 className="mb-4 ">Your Security Matters</h4>
+                <h4 className="mb-md-4 mt-4 mt-md-0 ">Your Security Matters</h4>
                 <p className="">
                   Your personal information stays protected with our secure
                   in-app communication tools. Passengers and drivers connect
@@ -134,7 +138,7 @@ function page() {
                 </p>
               </div>
             </div>
-            <div className="col-5 d-flex justify-content-center my-auto">
+            <div className="col-md-5 col-12 order-lg-2 order-1 d-flex justify-content-center my-auto">
               <img src="/frame.png" className="img-fluid " />
             </div>
           </div>
@@ -143,12 +147,12 @@ function page() {
       <div className="heroSection bgLightGreen">
         <div className="container">
           <div className="row ">
-            <div className="col-5 d-flex justify-content-center my-auto">
+            <div className="col-md-5 col-12 d-flex justify-content-center my-auto">
               <img src="/frame.png" className="img-fluid " />
             </div>
-            <div className="col-7 my-auto">
+            <div className="col-md-7 col-12 my-auto">
               <div className="homeLeftContent">
-                <h4 className="mb-4 textDark">
+                <h4 className="mb-md-4 mt-4 mt-md-0 textDark">
                   Building Community Through Transportation
                 </h4>
                 <p className="textDark">
@@ -170,9 +174,9 @@ function page() {
       <div className="heroSection ">
         <div className="container">
           <div className="row ">
-            <div className="col-7 my-auto">
+            <div className="col-md-7 col-12 order-2 order-lg-1 my-auto">
               <div className="homeLeftContent">
-                <h4 className="mb-4 ">Streamlined Experience</h4>
+                <h4 className="mb-md-4 mt-4 mt-md-0 ">Streamlined Experience</h4>
                 <p className="">
                   From our intuitive booking process to our hassle-free payment
                   system, we've eliminated unnecessary complications. Book rides
@@ -185,7 +189,7 @@ function page() {
                 </p>
               </div>
             </div>
-            <div className="col-5 d-flex justify-content-center my-auto">
+            <div className="col-md-5 col-12 order-lg-2 order-1 d-flex justify-content-center my-auto">
               <img src="/frame.png" className="img-fluid " />
             </div>
           </div>
@@ -194,12 +198,12 @@ function page() {
       <div className="heroSection bgLightGreen">
         <div className="container">
           <div className="row ">
-            <div className="col-5 d-flex justify-content-center my-auto">
+            <div className="col-md-5 col-12 d-flex justify-content-center my-auto">
               <img src="/frame.png" className="img-fluid " />
             </div>
-            <div className="col-7 my-auto">
+            <div className="col-md-7 col-12 my-auto">
               <div className="homeLeftContent">
-                <h4 className="mb-4 textDark">
+                <h4 className="mb-md-4 mt-4 mt-md-0 textDark">
                   A Platform That Rewards Quality
                 </h4>
                 <p className="textDark">
@@ -207,34 +211,37 @@ function page() {
                   reputation through visible ratings that help attract more
                   bookings. Passengers enjoy consistent, reliable service from
                   drivers who care about their experience. Everyone benefits
-                  from a system designed to value and encourage
-                  excellence.
+                  from a system designed to value and encourage excellence.
                 </p>
                 <p className="textDark">
-                  Quality and reliability come standard with every
-                  ride share on Mie Ride.
+                  Quality and reliability come standard with every ride share on
+                  Mie Ride.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-       <div className="heroSection ">
+      <div className="heroSection ">
         <div className="container">
           <div className="homeLeftContent">
-            <h4 className="mb-4 ">Plan Your Journey At your Terms</h4>
-                <p className="">
-                  Whether you're looking for reliable transportation or building your earning potential, Mie Ride provides the tools and transparency you need to succeed.
-                </p>
-                <p className="mt-5 mb-2 bottomP" >Join Ontario’s trusted ride share community and travel on your terms.</p>
-                <h4>Transportation that respects your choices.</h4>
+            <h4 className="mb-md-4 mt-0 ">Plan Your Journey At your Terms</h4>
+            <p className="">
+              Whether you're looking htmlFor reliable transportation or building
+              your earning potential, Mie Ride provides the tools and
+              transparency you need to succeed.
+            </p>
+            <p className="mt-md-5 mt-4 mb-2 bottomP textLightGreen">
+              Join Ontario’s trusted ride share community and travel on your
+              terms.
+            </p>
+            <h4>Transportation that respects your choices.</h4>
           </div>
-          
         </div>
       </div>
-       <Footer />
+      <Footer />
     </div>
   );
 }
 
-export default page;
+export default page
